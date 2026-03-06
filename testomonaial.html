@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Testimonials</title>
+<style>
+  body { font-family: sans-serif; padding: 50px; background: #fff; color: #444; }
+
+  /* Header */
+  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+  .label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #aaa; }
+  .title { font-size: 36px; font-weight: 800; color: #eee; position: relative; }
+  .title span { position: absolute; top: 5px; left: 0; font-size: 30px; color: #1d2130; }
+
+  /* Nav arrows */
+  .nav { display: flex; align-items: center; gap: 10px; }
+  .nav button {
+    width: 38px; height: 38px; border-radius: 50%;
+    border: 1.5px solid #ddd; background: #fff;
+    font-size: 16px; cursor: pointer;
+  }
+  .nav button:hover { background: #1d2130; color: #fff; border-color: #1d2130; }
+  .nav span { font-size: 14px; font-weight: 700; color: #1d2130; }
+
+  /* Slider */
+  .slider { overflow: hidden; }
+  .track { display: flex; transition: transform 0.4s ease; }
+  .slide { min-width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+  /* Card */
+  .card { display: flex; border: 1.5px solid #eee; border-radius: 12px; overflow: hidden; }
+  .card img { width: 200px; height: 100%; object-fit: cover; flex-shrink: 0; }
+  .card-body { padding: 24px; display: flex; flex-direction: column; justify-content: space-between; }
+  .card-body h3 { font-size: 18px; font-weight: 800; color: #1d2130; margin-bottom: 2px; }
+  .card-body .role { font-size: 13px; color: #aaa; margin-bottom: 14px; }
+  .card-body p { font-size: 13px; line-height: 1.8; color: #666; }
+  .card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; }
+  .brand { font-size: 14px; font-weight: 800; color: #999; }
+  .stars { color: #1d2130; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div>
+    <div class="label">OUR TESTIMONIALS</div>
+    <div class="title">Our Custom<span>Our Custom</span></div>
+  </div>
+  <div class="nav">
+    <button onclick="prev()">&#8592;</button>
+    <span id="counter">02 / 03</span>
+    <button onclick="next()">&#8594;</button>
+  </div>
+</div>
+
+<!-- Slider -->
+<div class="slider">
+  <div class="track" id="track">
+
+    <!-- Slide 1 -->
+    <div class="slide">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Alex"/>
+        <div class="card-body">
+          <div>
+            <h3>Alex Brown</h3>
+            <div class="role">Marketing</div>
+            <p>"Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis arcu dictums augue volutpat felis etiam suspendisse rhoncus mauris dignissim ante"</p>
+          </div>
+          <div class="card-footer">
+            <div class="brand">◎ Waleon</div>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80" alt="Sarah"/>
+        <div class="card-body">
+          <div>
+            <h3>Sarah Lane</h3>
+            <div class="role">Finance</div>
+            <p>"Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis arcu dictums augue volutpat felis etiam suspendisse rhoncus mauris dignissim ante"</p>
+          </div>
+          <div class="card-footer">
+            <div class="brand">⚡ Calsa</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Jonathon"/>
+        <div class="card-body">
+          <div>
+            <h3>Jonathon Doe</h3>
+            <div class="role">Finance</div>
+            <p>"Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis arcu dictums augue volutpat felis etiam suspendisse rhoncus mauris dignissim ante"</p>
+          </div>
+          <div class="card-footer">
+            <div class="brand">▣ Contex</div>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80" alt="Jonathon"/>
+        <div class="card-body">
+          <div>
+            <h3>Jonathon Doe</h3>
+            <div class="role">Finance</div>
+            <p>"Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis arcu dictums augue volutpat felis etiam suspendisse rhoncus mauris dignissim ante"</p>
+          </div>
+          <div class="card-footer">
+            <div class="brand">⚡ sefrov</div>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&q=80" alt="Maria"/>
+        <div class="card-body">
+          <div>
+            <h3>Maria Chen</h3>
+            <div class="role">CEO</div>
+            <p>"Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis arcu dictums augue volutpat felis etiam suspendisse rhoncus mauris dignissim ante"</p>
+          </div>
+          <div class="card-footer">
+            <div class="brand">✦ ToyJesh</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80" alt="David"/>
+        <div class="card-body">
+          <div>
+            <h3>David Park</h3>
+            <div class="role">Designer</div>
+            <p>"Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis arcu dictums augue volutpat felis etiam suspendisse rhoncus mauris dignissim ante"</p>
+          </div>
+          <div class="card-footer">
+            <div class="brand">◎ Waleon</div>
+            <div class="stars">★★★☆☆</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  let current = 2;
+  const total = 3;
+
+  function goTo(n) {
+    current = ((n - 1 + total) % total) + 1;
+    document.getElementById('track').style.transform = `translateX(-${(current - 1) * 100}%)`;
+    document.getElementById('counter').textContent = `0${current} / 0${total}`;
+  }
+
+  function prev() { goTo(current - 1); }
+  function next() { goTo(current + 1); }
+
+  goTo(2); // start on slide 2
+</script>
+
+</body>
+</html>
