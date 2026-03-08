@@ -12,23 +12,60 @@
 </head>
 
 <body>
+
     <div class="top-bar bg-dark text-white py-2">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <span class="me-4"><i class="fa-solid fa-envelope me-1"></i>support@sunseaz.com</span><span
-                    class="me-3">|</span>
-                <span><i class="fa-solid fa-stopwatch me-1"></i>Working 8:00 am - 5:00 pm</span>
+        <div class="container">
+
+            <div class="row align-items-center text-center text-lg-start">
+
+                <!-- LEFT SIDE -->
+                <div class="col-lg-6 col-12 mb-2 mb-lg-0">
+
+                    <div
+                        class="d-flex flex-column flex-md-row justify-content-center justify-content-lg-start align-items-center gap-2">
+
+                        <span>
+                            <i class="fa-solid fa-envelope me-1"></i>
+                            support@sunseaz.com
+                        </span>
+
+                        <span class="d-none d-md-inline">|</span>
+
+                        <span>
+                            <i class="fa-solid fa-stopwatch me-1"></i>
+                            Working 8:00 am - 5:00 pm
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <div class="col-lg-6 col-12">
+
+                    <div
+                        class="d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center gap-3">
+
+                        <a href="#" class="text-white text-decoration-none small">Company News</a>
+                        <a href="#" class="text-white text-decoration-none small">Faq</a>
+                        <a href="#" class="text-white text-decoration-none small">Contact</a>
+
+                        <span class="d-none d-md-inline">|</span>
+
+                        <div class="d-flex gap-3">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="d-flex align-items-center">
-                <a href="#" class="text-white text-decoration-none me-3 small">Company news</a>
-                <a href="#" class="text-white text-decoration-none me-3 small">Faq</a>
-                <a href="#" class="text-white text-decoration-none me-3 small">Contact</a><span class="me-3">|</span>
-                <i class="fa-brands fa-facebook-f me-3"></i>
-                <i class="fa-brands fa-twitter me-3"></i>
-                <i class="fa-brands fa-instagram me-3"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-            </div>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
@@ -42,18 +79,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <a class="nav-link dropdown-toggle" href="index.html">
-                        Home
-                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                             Pages
                         </a>
                         <ul class="dropdown-menu shadow">
                             <li><a class="dropdown-item" href="About-page.html">About -Us</a></li>
-                            <li><a class="dropdown-item" href="#">Pricing</a></li>
-                            <li><a class="dropdown-item" href="#">FAQ</a></li>
-                            <li><a class="dropdown-item" href="#">404 Page</a></li>
                         </ul>
                     </li>
 
@@ -62,24 +96,15 @@
                             Services
                         </a>
                         <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="services.html">Services</a></li>
-                            <li><a class="dropdown-item" href="#">Financial Planning</a></li>
-                            <li><a class="dropdown-item" href="#">Market Analysis</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            Pages
-                        </a>
-                        <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="#">Team</a></li>
-                            <li><a class="dropdown-item" href="#">Pricing</a></li>
-                            <li><a class="dropdown-item" href="#">FAQ</a></li>
-                            <li><a class="dropdown-item" href="#">404 Page</a></li>
+                            <li><a class="dropdown-item" href="services.html">services</a></li>
+                            <li><a class="dropdown-item" href="servicedetailspage.html">service Details</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact-page.html">Contact</a>
@@ -125,438 +150,435 @@
         </div>
 
     </div>
-
-</body>
-
-</html>
-<section class="about-section bg-white  position-relative overflow-hidden my-5 py-5">
-    <div class="container">
-        <div class="row align-items-center gx-5">
-            <div class="col-lg-6">
-                <div class="position-relative about-images">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-                        class="img-fluid rounded-4 main-img" alt="Business">
-                    <div class="experience-box position-absolute text-white 
+    <section class="about-section bg-light  position-relative overflow-hidden  py-5">
+        <div class="container">
+            <div class="row align-items-center gx-5">
+                <div class="col-lg-6">
+                    <div class="position-relative about-images">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+                            class="img-fluid rounded-4 main-img" alt="Business">
+                        <div class="experience-box position-absolute text-white 
                       d-flex flex-column justify-content-center align-items-center rounded-4">
-                        <h2 class="fw-bold mb-1">25+</h2>
-                        <span class="small">Year of experience</span>
+                            <h2 class="fw-bold mb-1">25+</h2>
+                            <span class="small">Year of experience</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                            class="small-img position-absolute rounded-4" alt="Meeting">
                     </div>
-                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-                        class="small-img position-absolute rounded-4" alt="Meeting">
                 </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <p class="text-uppercase fw-bold small mb-3 tracking">
+                        MORE ABOUT US
+                    </p>
+                    <h2 class="fw-bold about-title mb-4">
+                        Empowering <span class="text-muted">You</span> to
+                    </h2>
+                    <p class="text-muted about-text mb-4">
+                        Porttitor ornare fermentum aliquam pharetra ut facilisis gravida risus suscipit.
+                        dui feugiat fusce conubia ridiculus tristique parturient natoque vulputate risu.
+                    </p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3">
+                            <i class="fa-solid fa-circle-check me-2"></i>
+                            24/7 Call Services Available
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-circle-check me-2"></i>
+                            Great Skilled Consultant
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-circle-check me-2"></i>
+                            Expert Team Members
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <!-- LEFT: Call Section -->
+                        <div class="d-flex align-items-center gap-1">
+                            <div class="call-box d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <small class="text-muted d-block px-2">Call us anytime</small>
+                                <h5 class="fw-semibold mb-0 px-2">+256 56778.5678</h5>
+                            </div>
+                        </div>
+                        <!-- RIGHT: Signature -->
+                        <h4 class="signature mb-0">Jonathon Doe</h4>
+
+                    </div>
+                </div>
+
             </div>
-            <div class="col-lg-6 ps-lg-5">
-                <p class="text-uppercase fw-bold small mb-3 tracking">
-                    MORE ABOUT US
-                </p>
-                <h2 class="fw-bold about-title mb-4">
-                    Empowering <span class="text-muted">You</span> to
+        </div>
+    </section>
+    <section class="team-section py-5">
+        <div class="container text-center">
+
+            <span class="small-title">EXPERT MEMBERS</span>
+            <h2 class="main-title mb-5">Professionals</h2>
+
+            <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- SLIDE 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+
+                            <!-- MEMBER 1 -->
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>Julian Wyatt</h5>
+                                    <p>Finance Manager</p>
+                                </div>
+                            </div>
+
+                            <!-- MEMBER 2 -->
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>Sophia Miller</h5>
+                                    <p>Marketing Head</p>
+                                </div>
+                            </div>
+
+                            <!-- MEMBER 3 -->
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>David Johnson</h5>
+                                    <p>Business Analyst</p>
+                                </div>
+                            </div>
+
+                            <!-- MEMBER 4 -->
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>Emma Wilson</h5>
+                                    <p>HR Manager</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>Michael Lee</h5>
+                                    <p>Project Manager</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>Olivia Brown</h5>
+                                    <p>UI/UX Designer</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>William Smith</h5>
+                                    <p>Software Engineer</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>Ava Davis</h5>
+                                    <p>Operations Head</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 3 -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>Noah Clark</h5>
+                                    <p>Tech Lead</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>Isabella Moore</h5>
+                                    <p>Consultant</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>Liam Taylor</h5>
+                                    <p>Sales Head</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="team-card">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600"
+                                            class="img-fluid rounded-4">
+                                        <div class="plus-btn">+</div>
+                                    </div>
+                                    <h5>Charlotte Hall</h5>
+                                    <p>Strategy Advisor</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- DOTS -->
+                <div class="carousel-indicators custom-dots mt-4">
+                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="about-section bg-light py-5">
+        <div class="about-container">
+            <!-- LEFT SIDE -->
+            <div class="about-left">
+                <p class="about-subtitle fw-semibold">JUST A CONSULTANCY</p>
+
+                <h2 class="about-title">
+                    We know how to manage business globally
                 </h2>
-                <p class="text-muted about-text mb-4">
-                    Porttitor ornare fermentum aliquam pharetra ut facilisis gravida risus suscipit.
-                    dui feugiat fusce conubia ridiculus tristique parturient natoque vulputate risu.
-                </p>
-                <ul class="list-unstyled mb-4">
-                    <li class="mb-3">
-                        <i class="fa-solid fa-circle-check me-2"></i>
-                        24/7 Call Services Available
-                    </li>
-                    <li class="mb-3">
-                        <i class="fa-solid fa-circle-check me-2"></i>
-                        Great Skilled Consultant
-                    </li>
-                    <li class="mb-3">
-                        <i class="fa-solid fa-circle-check me-2"></i>
-                        Expert Team Members
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center justify-content-between mb-4">
-                    <!-- LEFT: Call Section -->
-                    <div class="d-flex align-items-center gap-1">
-                        <div class="call-box d-flex justify-content-center align-items-center ">
-                            <i class="fa-solid fa-phone text-white"></i>
-                        </div>
-                        <div>
-                            <small class="text-muted d-block px-2">Call us anytime</small>
-                            <h5 class="fw-semibold mb-0 px-2">+256 56778.5678</h5>
-                        </div>
+                <div class="about-feature">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-user-astronaut"></i>
                     </div>
-                    <!-- RIGHT: Signature -->
-                    <h4 class="signature mb-0">Jonathon Doe</h4>
-
+                    <div class="feature-text">
+                        <h4>Best Business Consulting</h4>
+                        <p>Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida rutrum.</p>
+                    </div>
                 </div>
+                <div class="about-feature">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    </div>
+                    <div class="feature-text">
+                        <h4>24/7 Customer Support</h4>
+                        <p>Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida rutrum.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="about-right">
+                <div class="about-images">
+                    <img class="image-main"
+                        src="https://plus.unsplash.com/premium_photo-1723802424179-ef25e1d90ad7?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <img class="image-overlay"
+                        src="https://images.unsplash.com/photo-1607544836657-08d9c1d97afe?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5 ">
+        <div class="testimonial-section ">
+
+            <div class="top-nav">
+                <div>
+                    <div class="small-text">OUR TESTIMONIAL</div>
+                    <div class="main-heading">Our Client Reviews</div>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="nav-btn" id="prevBtn">&#8592;</button>
+                    <div class="counter" id="counter">01 / 03</div>
+                    <button class="nav-btn" id="nextBtn">&#8594;</button>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img id="clientImage" src="https://randomuser.me/api/portraits/men/32.jpg">
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-text" id="testimonialText">
+                        I can't recommend this place enough. It's perfect for special occasions and memorable
+                        experiences.
+                    </div>
+
+                    <div class="client-name" id="clientName">William Henry</div>
+                    <div class="client-role" id="clientRole">Designer at Vertex Agency</div>
+                </div>
+
             </div>
 
         </div>
-    </div>
-</section>
-<section class="team-section py-5">
-    <div class="container text-center">
+    </section>
+    <section class="clients py-5 bg-light">
+        <div class="container d-flex  align-items-center justify-content-start">
+            <span class="client-title fw-bold">OUR TRUSTED CLIENTS</span>
+            <div class="client-logos d-flex justify-content-center align-items-center gap- 5 flex-wrap">
+                <img src="./images/instagram.png" alt="Toy Jesh">
+                <img src="./images/facebook.png" alt="Sefrov">
+                <img src="./images/ooooooooooooooooooooooooooooooooooo.png" alt="Waleon">
+                <img src="./images/social.png" alt="Calsa">
+                <img src="./images/microsoft.png" alt="Contex">
+                <img src="./images/tesla.png" alt="Toy Jesh">
+            </div>
+        </div>
+    </section>
 
-        <span class="small-title">EXPERT MEMBERS</span>
-        <h2 class="main-title mb-5">Professionals</h2>
+    <!-- Newsletter -->
+    <section class="newsletter py-5 ">
+        <div class="container">
+            <div class="row align-items-center">
 
-        <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="col-lg-6">
+                    <p class="sub-text">Subscribe Newsletter</p>
 
-            <div class="carousel-inner">
+                    <h1 class="news-title">
+                        Stay Updated with <br>
+                        the Latest News!
+                    </h1>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-lg-end mt-4 mt-lg-0">
 
-                <!-- SLIDE 1 -->
-                <div class="carousel-item active">
-                    <div class="row g-4">
-
-                        <!-- MEMBER 1 -->
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>Julian Wyatt</h5>
-                                <p>Finance Manager</p>
-                            </div>
-                        </div>
-
-                        <!-- MEMBER 2 -->
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>Sophia Miller</h5>
-                                <p>Marketing Head</p>
-                            </div>
-                        </div>
-
-                        <!-- MEMBER 3 -->
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>David Johnson</h5>
-                                <p>Business Analyst</p>
-                            </div>
-                        </div>
-
-                        <!-- MEMBER 4 -->
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>Emma Wilson</h5>
-                                <p>HR Manager</p>
-                            </div>
-                        </div>
-
+                    <div class="subscribe-box">
+                        <input type="email" placeholder="Enter Email Address">
+                        <button>Subscribe Now</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- SLIDE 2 -->
-                <div class="carousel-item">
-                    <div class="row g-4">
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer-section text-white pt-5">
 
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>Michael Lee</h5>
-                                <p>Project Manager</p>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row">
 
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>Olivia Brown</h5>
-                                <p>UI/UX Designer</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>William Smith</h5>
-                                <p>Software Engineer</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>Ava Davis</h5>
-                                <p>Operations Head</p>
-                            </div>
-                        </div>
-
+                <!-- Opening Hours -->
+                <div class="col-lg-3 mb-4">
+                    <div class="footer-box">
+                        <h5 class="mb-4">Opening Hours</h5>
+                        <p>Week Days <span class="float-end">09:00 - 24:00</span></p>
+                        <p>Saturday <span class="float-end">08:00 - 03:00</span></p>
+                        <p>Sunday <span class="float-end">Day Off</span></p>
+                        <button class="btn btn-light mt-3">Contact Us</button>
                     </div>
                 </div>
 
-                <!-- SLIDE 3 -->
-                <div class="carousel-item">
-                    <div class="row g-4">
+                <!-- Quick Links -->
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li>→ Figures</li>
+                        <li>→ Support</li>
+                        <li>→ Help & FAQ</li>
+                        <li>→ Contact Us</li>
+                        <li>→ Pricing & Plans</li>
+                        <li>→ Cookie Policy</li>
+                    </ul>
+                </div>
 
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>Noah Clark</h5>
-                                <p>Tech Lead</p>
-                            </div>
-                        </div>
+                <!-- More Links -->
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li>→ About Us</li>
+                        <li>→ Blog</li>
+                        <li>→ Account</li>
+                        <li>→ Our Company</li>
+                        <li>→ Service</li>
+                    </ul>
+                </div>
 
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>Isabella Moore</h5>
-                                <p>Consultant</p>
-                            </div>
-                        </div>
+                <!-- Get Updates -->
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4">Get Updates</h5>
+                    <p>Sign up for our latest news & articles.</p>
 
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>Liam Taylor</h5>
-                                <p>Sales Head</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="team-card">
-                                <div class="img-box">
-                                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600"
-                                        class="img-fluid rounded-4">
-                                    <div class="plus-btn">+</div>
-                                </div>
-                                <h5>Charlotte Hall</h5>
-                                <p>Strategy Advisor</p>
-                            </div>
-                        </div>
-
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter Email Address">
+                        <button class="btn btn-light">→</button>
                     </div>
+
+                    <small class="d-block mt-2">We do not publish your email</small>
                 </div>
 
             </div>
-
-            <!-- DOTS -->
-            <div class="carousel-indicators custom-dots mt-4">
-                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2"></button>
-            </div>
-
-        </div>
-    </div>
-</section>
-<section class="about-section bg-white">
-    <div class="about-container">
-        <!-- LEFT SIDE -->
-        <div class="about-left">
-            <p class="about-subtitle fw-semibold">JUST A CONSULTANCY</p>
-
-            <h2 class="about-title">
-                We know how to manage business globally
-            </h2>
-            <div class="about-feature">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-user-astronaut"></i>
-                </div>
-                <div class="feature-text">
-                    <h4>Best Business Consulting</h4>
-                    <p>Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida rutrum.</p>
-                </div>
-            </div>
-            <div class="about-feature">
-                <div class="feature-icon">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
-                </div>
-                <div class="feature-text">
-                    <h4>24/7 Customer Support</h4>
-                    <p>Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida rutrum.</p>
-                </div>
+            <hr class="footer-line">
+            <div class="text-center py-3">
+                Sunseaz - Copyright 2026. All Rights Reserved.
             </div>
         </div>
-        <!-- RIGHT SIDE -->
-        <div class="about-right">
-            <div class="about-images">
-                <img class="image-main"
-                    src="https://plus.unsplash.com/premium_photo-1723802424179-ef25e1d90ad7?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                <img class="image-overlay"
-                    src="https://images.unsplash.com/photo-1607544836657-08d9c1d97afe?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="container-fluid bg-light py-3">
-    <div class="testimonial-section ">
-
-        <div class="top-nav">
-            <div>
-                <div class="small-text">OUR TESTIMONIAL</div>
-                <div class="main-heading">Our Client Reviews</div>
-            </div>
-
-            <div class="nav-controls">
-                <button class="nav-btn" id="prevBtn">&#8592;</button>
-                <div class="counter" id="counter">01 / 03</div>
-                <button class="nav-btn" id="nextBtn">&#8594;</button>
-            </div>
-        </div>
-        <div class="testimonial-card">
-            <div class="testimonial-image">
-                <img id="clientImage" src="https://randomuser.me/api/portraits/men/32.jpg">
-            </div>
-            <div class="testimonial-content">
-                <div class="testimonial-text" id="testimonialText">
-                    I can't recommend this place enough. It's perfect for special occasions and memorable experiences.
-                </div>
-
-                <div class="client-name" id="clientName">William Henry</div>
-                <div class="client-role" id="clientRole">Designer at Vertex Agency</div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-<section class="clients my-5">
-    <div class="container d-flex  align-items-center justify-content-start">
-        <span class="client-title fw-bold">OUR TRUSTED CLIENTS</span>
-        <div class="client-logos d-flex justify-content-center align-items-center gap- 5 flex-wrap">
-            <img src="./images/instagram.png" alt="Toy Jesh">
-            <img src="./images/facebook.png" alt="Sefrov">
-            <img src="./images/ooooooooooooooooooooooooooooooooooo.png" alt="Waleon">
-            <img src="./images/social.png" alt="Calsa">
-            <img src="./images/microsoft.png" alt="Contex">
-            <img src="./images/tesla.png" alt="Toy Jesh">
-        </div>
-    </div>
-</section>
-
-<!-- Newsletter -->
-<section class="newsletter">
-    <div class="container">
-        <div class="row align-items-center">
-
-            <div class="col-lg-6">
-                <p class="sub-text">Subscribe Newsletter</p>
-
-                <h1 class="news-title">
-                    Stay Updated with <br>
-                    the Latest News!
-                </h1>
-            </div>
-            <div class="col-lg-6 d-flex justify-content-lg-end mt-4 mt-lg-0">
-
-                <div class="subscribe-box">
-                    <input type="email" placeholder="Enter Email Address">
-                    <button>Subscribe Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer-section text-white pt-5">
-
-    <div class="container">
-        <div class="row">
-
-            <!-- Opening Hours -->
-            <div class="col-lg-3 mb-4">
-                <div class="footer-box">
-                    <h5 class="mb-4">Opening Hours</h5>
-                    <p>Week Days <span class="float-end">09:00 - 24:00</span></p>
-                    <p>Saturday <span class="float-end">08:00 - 03:00</span></p>
-                    <p>Sunday <span class="float-end">Day Off</span></p>
-                    <button class="btn btn-light mt-3">Contact Us</button>
-                </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-lg-3 mb-4">
-                <h5 class="mb-4">Quick Links</h5>
-                <ul class="list-unstyled footer-links">
-                    <li>→ Figures</li>
-                    <li>→ Support</li>
-                    <li>→ Help & FAQ</li>
-                    <li>→ Contact Us</li>
-                    <li>→ Pricing & Plans</li>
-                    <li>→ Cookie Policy</li>
-                </ul>
-            </div>
-
-            <!-- More Links -->
-            <div class="col-lg-3 mb-4">
-                <h5 class="mb-4">Company</h5>
-                <ul class="list-unstyled footer-links">
-                    <li>→ About Us</li>
-                    <li>→ Blog</li>
-                    <li>→ Account</li>
-                    <li>→ Our Company</li>
-                    <li>→ Service</li>
-                </ul>
-            </div>
-
-            <!-- Get Updates -->
-            <div class="col-lg-3 mb-4">
-                <h5 class="mb-4">Get Updates</h5>
-                <p>Sign up for our latest news & articles.</p>
-
-                <div class="input-group">
-                    <input type="email" class="form-control" placeholder="Enter Email Address">
-                    <button class="btn btn-light">→</button>
-                </div>
-
-                <small class="d-block mt-2">We do not publish your email</small>
-            </div>
-
-        </div>
-        <hr class="footer-line">
-        <div class="text-center py-3">
-            Sunseaz - Copyright 2026. All Rights Reserved.
-        </div>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

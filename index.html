@@ -13,22 +13,57 @@
 
 <body>
   <div class="top-bar bg-dark text-white py-2">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-        <span class="me-4"><i class="fa-solid fa-envelope me-1"></i>support@sunseaz.com</span><span
-          class="me-3">|</span>
-        <span><i class="fa-solid fa-stopwatch me-1"></i>Working 8:00 am - 5:00 pm</span>
+    <div class="container">
+
+      <div class="row align-items-center text-center text-lg-start">
+
+        <!-- LEFT SIDE -->
+        <div class="col-lg-6 col-12 mb-2 mb-lg-0">
+
+          <div
+            class="d-flex flex-column flex-md-row justify-content-center justify-content-lg-start align-items-center gap-2">
+
+            <span>
+              <i class="fa-solid fa-envelope me-1"></i>
+              support@sunseaz.com
+            </span>
+
+            <span class="d-none d-md-inline">|</span>
+
+            <span>
+              <i class="fa-solid fa-stopwatch me-1"></i>
+              Working 8:00 am - 5:00 pm
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="col-lg-6 col-12">
+
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center gap-3">
+
+            <a href="#" class="text-white text-decoration-none small">Company News</a>
+            <a href="#" class="text-white text-decoration-none small">Faq</a>
+            <a href="#" class="text-white text-decoration-none small">Contact</a>
+
+            <span class="d-none d-md-inline">|</span>
+
+            <div class="d-flex gap-3">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="d-flex align-items-center">
-        <a href="#" class="text-white text-decoration-none me-3 ">Company news</a>
-        <a href="#" class="text-white text-decoration-none me-3 ">Faq</a>
-        <a href="#" class="text-white text-decoration-none me-3 ">Contact</a><span class="me-3">|</span>
-        <i class="fa-brands fa-facebook-f me-3"></i>
-        <i class="fa-brands fa-twitter me-3"></i>
-        <i class="fa-brands fa-instagram me-3"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-      </div>
     </div>
   </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
@@ -42,7 +77,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-         <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
@@ -51,9 +86,6 @@
             </a>
             <ul class="dropdown-menu shadow">
               <li><a class="dropdown-item" href="About-page.html">About -Us</a></li>
-              <li><a class="dropdown-item" href="#">Pricing</a></li>
-              <li><a class="dropdown-item" href="#">FAQ</a></li>
-              <li><a class="dropdown-item" href="#">404 Page</a></li>
             </ul>
           </li>
 
@@ -63,23 +95,14 @@
             </a>
             <ul class="dropdown-menu shadow">
               <li><a class="dropdown-item" href="services.html">services</a></li>
-              <li><a class="dropdown-item" href="#">Financial Planning</a></li>
-              <li><a class="dropdown-item" href="#">Market Analysis</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-              projects
-            </a>
-            <ul class="dropdown-menu shadow">
-              <li><a class="dropdown-item" href="#">Team</a></li>
-              <li><a class="dropdown-item" href="#">Pricing</a></li>
-              <li><a class="dropdown-item" href="#">FAQ</a></li>
-              <li><a class="dropdown-item" href="#">404 Page</a></li>
+              <li><a class="dropdown-item" href="servicedetailspage.html">service Details</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#projects">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact-page.html">Contact</a>
@@ -161,7 +184,7 @@
     </button>
   </div>
   <!-- about-section -->
-  <section class="about-section bg-white  position-relative overflow-hidden my-5 py-5">
+  <section class="about-section bg-light  position-relative overflow-hidden  py-5">
     <div class="container">
       <div class="row align-items-center gx-5">
         <div class="col-lg-6">
@@ -177,7 +200,7 @@
               class="small-img position-absolute rounded-4" alt="Meeting">
           </div>
         </div>
-        <div class="col-lg-6 ps-lg-5">
+        <div class="col-lg-6 ps-lg-5 ps-sm-5">
           <p class="text-uppercase fw-bold small mb-3 tracking">
             MORE ABOUT US
           </p>
@@ -329,13 +352,15 @@
   <section class="cta-section d-flex align-items-center my-5">
 
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-8 col-md-7">
-          <h2 class="cta-title text-white mb-0">
+      <div class="row align-items-center text-center text-md-start">
+
+        <div class="col-lg-8 col-md-7 col-12 mb-3 mb-md-0">
+          <h2 class="cta-title text-white">
             Let’s discuss your project
           </h2>
         </div>
-        <div class="col-lg-4 col-md-5 text-md-end text-start mt-4 mt-md-0">
+
+        <div class="col-lg-4 col-md-5 col-12 text-md-end text-center">
           <a href="#" class="btn btn-light cta-btn">
             Lets Work Together
           </a>
@@ -344,58 +369,70 @@
       </div>
     </div>
 
-  </section>
-  <!-- ////////////// -->
-  <section class="about-section bg-white">
+  </section> <!-- ////////////// -->
+  <section class="about-section bg-light py-5">
 
     <div class="about-container">
 
-      <!-- LEFT SIDE -->
+      <!-- LEFT -->
       <div class="about-left">
 
-        <p class="about-subtitle fw-semibold">JUST A CONSULTANCY</p>
+        <p class="about-subtitle">JUST A CONSULTANCY</p>
 
         <h2 class="about-title">
           We know how to manage business globally
         </h2>
 
         <div class="about-feature">
+
           <div class="feature-icon">
             <i class="fa-solid fa-user-astronaut"></i>
           </div>
+
           <div class="feature-text">
             <h4>Best Business Consulting</h4>
-            <p>Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida rutrum.</p>
+            <p>Fusce condimentum mattis placerat odio donec lacus porta torquent.</p>
           </div>
+
         </div>
 
         <div class="about-feature">
+
           <div class="feature-icon">
             <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
           </div>
+
           <div class="feature-text">
             <h4>24/7 Customer Support</h4>
-            <p>Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida rutrum.</p>
+            <p>Fusce condimentum mattis placerat odio donec lacus porta torquent.</p>
           </div>
+
         </div>
 
       </div>
 
 
-      <!-- RIGHT SIDE -->
+      <!-- RIGHT -->
       <div class="about-right">
+
         <div class="about-images">
+
           <img class="image-main"
-            src="https://plus.unsplash.com/premium_photo-1723802424179-ef25e1d90ad7?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            src="https://plus.unsplash.com/premium_photo-1723802424179-ef25e1d90ad7?q=80&w=880&auto=format&fit=crop">
+
           <img class="image-overlay"
-            src="https://images.unsplash.com/photo-1607544836657-08d9c1d97afe?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            src="https://images.unsplash.com/photo-1607544836657-08d9c1d97afe?q=80&w=880&auto=format&fit=crop">
+
         </div>
+
       </div>
 
     </div>
 
   </section>
-  <section class="stats-section bg-light">
+
+
+  <section class="stats-section py-5">
     <div class="container">
       <div class="row justify-content-center text-white">
 
@@ -454,7 +491,7 @@
       </div>
     </div>
   </section>
-  <section class="projects-section bg-light">
+  <section id="projects" class="projects-section    py-5">
     <div class="container">
       <div class="d-flex justify-content-between align-items-start ">
         <div>
@@ -534,7 +571,7 @@
 
     </div>
   </section>
-  <section class="team-section py-5 bg-white">
+  <section class="team-section py-5 bg-light ">
     <div class="container text-center">
 
       <span class="small-title">EXPERT MEMBERS</span>
@@ -725,7 +762,7 @@
       </div>
     </div>
   </section>
-  <section class="container-fluid bg-light py-3">
+  <section class="container-fluid bg-light py-5">
     <div class="testimonial-section ">
 
       <div class="top-nav">
@@ -760,7 +797,7 @@
 
     </div>
   </section>
-  <section class="appointment-section bg-white">
+  <section class="appointment-section  bg-light py-5">
     <div class="container">
       <div class="form-box fw-semibold">MAKE AN APPOINTMENT</span>
         <h2>Request a free quote</h2>
@@ -783,7 +820,7 @@
   </section>
   <!-- // -->
 
-  <section class="blog-section">
+  <section id="blog" class="blog-section py-5  ">
     <div class="container text-center">
 
       <p class="small-title fw-semibold text-dark">BLOG & NEWS</p>
@@ -899,7 +936,7 @@
 
     </div>
   </section>
-  <section class="contact-area position-relative">
+  <section class="contact-area position-relative bg-light  py-5">
 
     <!-- TOP WHITE AREA -->
     <div class="top-bg"></div>
