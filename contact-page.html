@@ -2,17 +2,1009 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invena – Contact</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            color: #222;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* TOP BAR */
+        .top-bar {
+            background: #1c1c24;
+            color: #ccc;
+            font-size: 0.78rem;
+            padding: 8px 0;
+        }
+
+        .top-bar .inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .top-bar .left,
+        .top-bar .right {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar .sep {
+            color: #444;
+        }
+
+        .top-bar a {
+            color: #ccc;
+        }
+
+        .top-bar a:hover {
+            color: #fff;
+        }
+
+        .top-bar .socials {
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-bar .socials i {
+            font-size: 0.75rem;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .top-bar .inner {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .top-bar .left,
+            .top-bar .right {
+                justify-content: center;
+            }
+
+            .top-bar .sep {
+                display: none;
+            }
+        }
+
+        /* NAVBAR */
+        .site-nav {
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .07);
+        }
+
+        .site-nav .container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 0;
+        }
+
+        .nav-logo .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: #1c1c24;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-logo .logo-icon i {
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .nav-logo .logo-text strong {
+            display: block;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #1c1c24;
+        }
+
+        .nav-logo .logo-text span {
+            font-size: 0.68rem;
+            color: #888;
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 6px 10px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+
+        .hamburger i {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 0;
+            margin: 0;
+            padding: 0;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links li a {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 20px 13px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #333;
+            white-space: nowrap;
+        }
+
+        .nav-links li a:hover {
+            color: #1c1c24;
+        }
+
+        .nav-links li a .arr {
+            font-size: 0.6rem;
+        }
+
+        .dropdown-custom {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            min-width: 160px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+            border-radius: 6px;
+            padding: 8px 0;
+            z-index: 999;
+        }
+
+        .nav-links li:hover .dropdown-custom {
+            display: block;
+        }
+
+        .dropdown-custom a {
+            padding: 9px 18px !important;
+            display: block !important;
+            font-size: 0.85rem;
+            color: #444;
+        }
+
+        .dropdown-custom a:hover {
+            background: #f5f5f5;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #444;
+            font-size: 1rem;
+            padding: 4px;
+        }
+
+        .btn-quote {
+            background: #1c1c24;
+            color: #fff !important;
+            padding: 9px 20px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            white-space: nowrap;
+            transition: background .2s;
+        }
+
+        .btn-quote:hover {
+            background: #333;
+        }
+
+        .menu-icon-btn {
+            font-size: 1rem;
+            color: #444;
+            cursor: pointer;
+        }
+
+        @media (max-width: 991px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                align-items: flex-start;
+                padding: 0 0 16px;
+                border-top: 1px solid #eee;
+                margin-top: 8px;
+            }
+
+            .nav-menu.open {
+                display: flex;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-links li a {
+                padding: 10px 0;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .dropdown-custom {
+                position: static;
+                box-shadow: none;
+                padding-left: 12px;
+            }
+
+            .nav-actions {
+                margin-top: 12px;
+                padding-top: 12px;
+                border-top: 1px solid #eee;
+                width: 100%;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .site-nav .container {
+                flex-wrap: wrap;
+            }
+        }
+
+        /* CONTACT SECTION */
+        .contact-section {
+            background: #f2f3f5;
+            padding: 70px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            border: 55px solid rgba(0, 0, 0, .045);
+            width: 340px;
+            height: 340px;
+            top: -90px;
+            left: -90px;
+            pointer-events: none;
+        }
+
+        .contact-section::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            border: 45px solid rgba(0, 0, 0, .04);
+            width: 230px;
+            height: 230px;
+            top: 30px;
+            right: 50px;
+            pointer-events: none;
+        }
+
+        .deco-circ {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 40px solid rgba(0, 0, 0, .04);
+            bottom: 20px;
+            left: 180px;
+            pointer-events: none;
+        }
+
+        .deco-arrow {
+            position: absolute;
+            top: 135px;
+            right: 160px;
+            width: 90px;
+            opacity: .22;
+            pointer-events: none;
+        }
+
+        .contact-title {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1c1c24;
+            margin-bottom: 48px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: 1fr 1.15fr 1fr;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, .11);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Info card */
+        .info-card {
+            background: #1c1c24;
+            padding: 44px 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+            justify-content: center;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .info-icon-wrap {
+            width: 44px;
+            height: 44px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info-icon-wrap i {
+            font-size: 0.88rem;
+            color: #1c1c24;
+        }
+
+        .info-text p {
+            font-size: 0.75rem;
+            color: #999;
+            margin-bottom: 4px;
+        }
+
+        .info-text h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.4;
+        }
+
+        /* Photo */
+        .contact-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            min-height: 360px;
+        }
+
+        /* Form card */
+        .form-card {
+            background: #fff;
+            padding: 40px 30px;
+        }
+
+        .form-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1c1c24;
+            margin-bottom: 22px;
+        }
+
+        .form-card input[type="text"],
+        .form-card input[type="email"],
+        .form-card textarea {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1px solid #dde0e6;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            font-family: inherit;
+            color: #333;
+            margin-bottom: 12px;
+            outline: none;
+            transition: border-color .2s;
+        }
+
+        .form-card input:focus,
+        .form-card textarea:focus {
+            border-color: #1c1c24;
+        }
+
+        .form-card textarea {
+            height: 108px;
+            resize: vertical;
+        }
+
+        .form-card .terms {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.78rem;
+            color: #777;
+            margin-bottom: 18px;
+            cursor: pointer;
+        }
+
+        .btn-touch {
+            background: #1c1c24;
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 5px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background .2s;
+        }
+
+        .btn-touch:hover {
+            background: #333;
+        }
+
+        @media (max-width: 900px) {
+            .contact-cards {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-photo {
+                grid-column: 1 / -1;
+                order: -1;
+            }
+
+            .contact-photo img {
+                min-height: 220px;
+                max-height: 280px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contact-section {
+                padding: 44px 0 54px;
+            }
+
+            .contact-title {
+                font-size: 1.7rem;
+                margin-bottom: 28px;
+            }
+
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-photo {
+                grid-column: 1;
+                order: -1;
+            }
+
+            .contact-photo img {
+                min-height: 200px;
+                max-height: 240px;
+            }
+
+            .info-card {
+                padding: 26px 20px;
+                gap: 24px;
+            }
+
+            .form-card {
+                padding: 26px 20px;
+            }
+
+            .deco-arrow,
+            .contact-section::after {
+                display: none;
+            }
+        }
+
+        /* MAP */
+        .map-section {
+            padding: 48px 0 40px;
+            background: #fff;
+        }
+
+        .map-wrap {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+        }
+
+        .map-wrap iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            display: block;
+        }
+
+        @media (max-width: 767px) {
+            .map-wrap iframe {
+                height: 260px;
+            }
+
+            .map-section {
+                padding: 28px 0 22px;
+            }
+        }
+
+        /* CLIENTS */
+        .clients-section {
+            padding: 36px 0;
+            background: #fff;
+        }
+
+        .clients-inner {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        .clients-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: #333;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+
+        .clients-logos {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 28px;
+        }
+
+        .client-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #555;
+        }
+
+        @media (max-width: 767px) {
+            .clients-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14px;
+            }
+
+            .clients-logos {
+                gap: 16px;
+            }
+        }
+
+        /* NEWSLETTER */
+        .newsletter-section {
+            background: #eff0f2;
+            padding: 60px 0;
+        }
+
+        .newsletter-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-text .sub-label {
+            font-size: 0.78rem;
+            color: #999;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .newsletter-text h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #1c1c24;
+            line-height: 1.25;
+        }
+
+        .subscribe-form {
+            display: flex;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 14px rgba(0, 0, 0, .08);
+            min-width: 300px;
+            flex: 1;
+            max-width: 420px;
+        }
+
+        .subscribe-form input {
+            flex: 1;
+            padding: 14px 18px;
+            border: 1px solid #ddd;
+            border-right: none;
+            font-size: 0.85rem;
+            outline: none;
+            border-radius: 5px 0 0 5px;
+            min-width: 0;
+        }
+
+        .subscribe-form button {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-left: none;
+            padding: 14px 18px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+            white-space: nowrap;
+            border-radius: 0 5px 5px 0;
+            transition: background .2s;
+        }
+
+        .subscribe-form button:hover {
+            background: #f5f5f5;
+        }
+
+        @media (max-width: 767px) {
+            .newsletter-section {
+                padding: 44px 0;
+            }
+
+            .newsletter-text h2 {
+                font-size: 1.6rem;
+            }
+
+            .subscribe-form {
+                min-width: 100%;
+                max-width: 100%;
+                flex-direction: column;
+            }
+
+            .subscribe-form input {
+                border-right: 1px solid #ddd;
+                border-bottom: none;
+                border-radius: 5px 5px 0 0;
+            }
+
+            .subscribe-form button {
+                border-left: 1px solid #ddd;
+                border-top: none;
+                border-radius: 0 0 5px 5px;
+                text-align: center;
+            }
+        }
+
+        /* FOOTER */
+        .site-footer {
+            background: #14141c;
+            color: #aaa;
+            padding: 60px 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1.2fr 1fr;
+            gap: 48px;
+        }
+
+        .footer-logo-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .footer-logo-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-logo-icon i {
+            color: #1c1c24;
+            font-size: 0.9rem;
+        }
+
+        .footer-logo-text strong {
+            display: block;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 800;
+        }
+
+        .footer-logo-text span {
+            font-size: 0.68rem;
+            color: #666;
+        }
+
+        .footer-desc {
+            font-size: 0.82rem;
+            line-height: 1.75;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 8px;
+        }
+
+        .footer-socials a {
+            width: 32px;
+            height: 32px;
+            border-radius: 5px;
+            background: #1e1e2c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 0.78rem;
+            transition: background .2s, color .2s;
+        }
+
+        .footer-socials a:hover {
+            background: #2a2a3c;
+            color: #fff;
+        }
+
+        .footer-heading {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .footer-underline {
+            width: 38px;
+            height: 3px;
+            background: linear-gradient(90deg, #f5a623, #f0c040);
+            border-radius: 2px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 10px;
+        }
+
+        .footer-links-grid a {
+            font-size: 0.82rem;
+            color: #777;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: color .2s;
+        }
+
+        .footer-links-grid a:hover {
+            color: #ddd;
+        }
+
+        .footer-links-grid a::before {
+            content: '→';
+            font-size: 0.72rem;
+        }
+
+        .footer-contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .fc-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .fc-icon {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #1e1e2c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fc-icon i {
+            font-size: 0.78rem;
+            color: #f5a623;
+        }
+
+        .fc-text p {
+            font-size: 0.72rem;
+            color: #555;
+            margin-bottom: 2px;
+        }
+
+        .fc-text h5 {
+            font-size: 0.83rem;
+            font-weight: 600;
+            color: #bbb;
+            line-height: 1.4;
+        }
+
+        .footer-bottom {
+            margin-top: 48px;
+            border-top: 1px solid #1e1e2c;
+            padding: 18px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .footer-bottom p {
+            font-size: 0.78rem;
+            color: #555;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-bottom-links a {
+            font-size: 0.78rem;
+            color: #666;
+            transition: color .2s;
+        }
+
+        .footer-bottom-links a:hover {
+            color: #aaa;
+        }
+
+        @media (max-width: 900px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 36px;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .footer-title {
+                font-size: 18px;
+                /* text-align: center; */
+            }
+
+            .contact-item {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .contact-item .icon {
+                width: 35px;
+                height: 35px;
+            }
+
+            .contact-item .text h6 {
+                font-size: 15px;
+            }
+
+            .contact-item .text p {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            /* .contact-item {
+                flex-direction: row;
+                align-items: flex-start;
+                text-align: left;
+            } */
+
+            .contact-item {
+                justify-content: flex-start !important;
+                align-items: flex-start !important;
+                text-align: left !important;
+            }
+
+            .footer-title {
+                text-align: left;
+            }
+        }
+
+        @media (max-width:992px) {
+
+            .footer-contact {
+                align-items: flex-start;
+            }
+
+            .contact-item {
+                justify-content: flex-start;
+                text-align: left;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .site-footer {
+                padding: 44px 0 0;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-links-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .footer-links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
     <div class="top-bar bg-dark text-white py-2">
         <div class="container">
 
@@ -47,9 +1039,9 @@
                     <div
                         class="d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center gap-3">
 
-                        <a href="#" class="text-white text-decoration-none small">Company News</a>
-                        <a href="#" class="text-white text-decoration-none small">Faq</a>
-                        <a href="#" class="text-white text-decoration-none small">Contact</a>
+                        <a href="#" class="text-white text-decoration-none ">Company News</a>
+                        <a href="#" class="text-white text-decoration-none ">Faq</a>
+                        <a href="#" class="text-white text-decoration-none ">Contact</a>
 
                         <span class="d-none d-md-inline">|</span>
 
@@ -131,76 +1123,67 @@
             </div>
         </div>
     </nav>
+
+    <!-- CONTACT SECTION -->
     <section class="contact-section">
-
-        <div class=" container contact-container">
-
+        <div class="deco-circ"></div>
+        <svg class="deco-arrow" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 55 Q30 5 80 20 Q95 25 90 10" stroke="#333" stroke-width="2.5" fill="none"
+                stroke-linecap="round" />
+            <path d="M82 6 L90 10 L84 17" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+        <div class="container">
             <h2 class="contact-title">Contact Us</h2>
-
-            <div class="contact-layout">
-
-                <!-- LEFT INFO PANEL -->
-
-                <div class="contact-infoo">
-
+            <div class="contact-cards">
+                <!-- Info -->
+                <div class="info-card">
                     <div class="info-item">
-                        <div class="info-icon">📞</div>
-                        <div>
+                        <div class="info-icon-wrap"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-text">
                             <p>Call Us 24/7</p>
-                            <h4>(+91)9550948414</h4>
+                            <h4>(+91) 9550948414</h4>
                         </div>
                     </div>
-
                     <div class="info-item">
-                        <div class="info-icon">✉</div>
-                        <div>
+                        <div class="info-icon-wrap"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-text">
                             <p>Work with us</p>
                             <h4>Sunseaz@gmail.com</h4>
                         </div>
                     </div>
-
                     <div class="info-item">
-                        <div class="info-icon">📍</div>
-                        <div>
+                        <div class="info-icon-wrap"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-text">
                             <p>Our Location</p>
-                            <h4>NK Towers ,Madhapur</h4>
+                            <h4>NK Towers, Madhapur</h4>
                         </div>
                     </div>
-
                 </div>
-                <!-- CENTER IMAGE -->
-                <div class="contact-image">
-                    <img src="https://images.unsplash.com/photo-1556742393-d75f468bfcb0">
+                <!-- Photo -->
+                <div class="contact-photo">
+                    <img src="https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=800&q=80" alt="Contact" />
                 </div>
-                <!-- RIGHT FORM -->
-                <div class="contact-form">
-
+                <!-- Form -->
+                <div class="form-card">
                     <h3>Get In Touch</h3>
-
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Johndoe@gmail.com">
+                    <input type="text" placeholder="Your Name" />
+                    <input type="email" placeholder="Johndoe@gmail.com" />
                     <textarea placeholder="Message"></textarea>
-
-                    <label class="check">
-                        <input type="checkbox"> I agree to the Terms & Conditions
-                    </label>
-
-                    <button>Get In Touch</button>
-
+                    <label class="terms"><input type="checkbox" /> I agree to the Terms &amp; Conditions</label>
+                    <button class="btn-touch" type="button">Get In Touch</button>
                 </div>
-
             </div>
-
         </div>
-
     </section>
-    <div class="map-section  bg-white ">
+
+    <!-- MAP -->
+    <div class="map-section">
         <div class="container">
-            <div class="map-box">
+            <div class="map-wrap">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2282111809213!2d78.38460247435803!3d17.448787983448877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9962cf100025%3A0x3be7318a7ecb9da9!2sSunseaz%20Technologies!5e0!3m2!1sen!2sin!4v1772684269427!5m2!1sen!2sin"
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location"></iframe>
             </div>
         </div>
     </div>
@@ -219,12 +1202,12 @@
         </div>
     </section>
 
-    <!-- Newsletter -->
+
     <section class="newsletter">
-        <div class="container">
+        <div class="container ">
             <div class="row align-items-center">
 
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <p class="sub-text">Subscribe Newsletter</p>
 
                     <h1 class="news-title">
@@ -232,7 +1215,7 @@
                         the Latest News!
                     </h1>
                 </div>
-                <div class="col-lg-5 d-flex  mt-4 mt-lg-0">
+                <div class="col-lg-6 d-flex justify-content-lg-end  justify-content-md-center mt-4 mt-lg-0">
 
                     <div class="subscribe-box">
                         <input type="email" placeholder="Enter Email Address">
@@ -242,73 +1225,137 @@
             </div>
         </div>
     </section>
-    <footer class="footer-section text-white pt-5">
+
+    <footer class="footer-area">
 
         <div class="container">
+
             <div class="row">
 
-                <!-- Opening Hours -->
-                <div class="col-lg-3 mb-4">
-                    <div class="footer-box">
-                        <h5 class="mb-4">Opening Hours</h5>
-                        <p>Week Days <span class="float-end">09:00 - 24:00</span></p>
-                        <p>Saturday <span class="float-end">08:00 - 03:00</span></p>
-                        <p>Sunday <span class="float-end">Day Off</span></p>
-                        <button class="btn btn-light mt-3">Contact Us</button>
+                <!-- Logo Section -->
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="footer-logo-area">
+
+                        <img src="./images/headerlogo.png" alt="logo">
+
+                        <p class="disc">
+                            We specialize in providing cutting-edge technology solutions that empower businesses
+                            to thrive in the digital age.
+                        </p>
+
+                        <ul class="social-icons">
+
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+
+                        </ul>
+
                     </div>
                 </div>
+
 
                 <!-- Quick Links -->
-                <div class="col-lg-3 mb-4">
-                    <h5 class="mb-4">Quick Links</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li>→ Figures</li>
-                        <li>→ Support</li>
-                        <li>→ Help & FAQ</li>
-                        <li>→ Contact Us</li>
-                        <li>→ Pricing & Plans</li>
-                        <li>→ Cookie Policy</li>
-                    </ul>
-                </div>
+                <div class="col-lg-4 col-md-4 col-12">
 
-                <!-- More Links -->
-                <div class="col-lg-3 mb-4">
-                    <h5 class="mb-4">Company</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li>→ About Us</li>
-                        <li>→ Blog</li>
-                        <li>→ Account</li>
-                        <li>→ Our Company</li>
-                        <li>→ Service</li>
-                    </ul>
-                </div>
+                    <h5 class="footer-title">Quick Links</h5>
 
-                <!-- Get Updates -->
-                <div class="col-lg-3 mb-4">
-                    <h5 class="mb-4">Get Updates</h5>
-                    <p>Sign up for our latest news & articles.</p>
+                    <div class="quick-links">
 
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter Email Address">
-                        <button class="btn btn-light">→</button>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-arrow-right"></i> Home</a></li>
+                            <li><a href="#"><i class="fa fa-arrow-right"></i> About</a></li>
+                            <li><a href="#"><i class="fa fa-arrow-right"></i> Services</a></li>
+                            <li><a href="#"><i class="fa fa-arrow-right"></i> Portfolio</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#"><i class="fa fa-arrow-right"></i> Blog</a></li>
+                            <li><a href="#"><i class="fa fa-arrow-right"></i> FAQ</a></li>
+                            <li><a href="#"><i class="fa fa-arrow-right"></i> Contact</a></li>
+                        </ul>
+
                     </div>
 
-                    <small class="d-block mt-2">We do not publish your email</small>
+                </div>
+
+
+                <!-- Contact -->
+                <div class="col-lg-4 col-md-4 col-12 f-contact">
+
+                    <h5 class="footer-title">Contact Us</h5>
+
+                    <div class="footer-contact">
+
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+
+                            <div class="text">
+                                <h6>Call Us</h6>
+                                <p>+91 9876543210</p>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+
+                            <div class="text">
+                                <h6>Email</h6>
+                                <p>info@gmail.com</p>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+
+                            <div class="text">
+                                <h6>Address</h6>
+                                <p>Hyderabad, India</p>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
-            <hr class="footer-line">
-            <div class="text-center py-3">
-                Sunseaz - Copyright 2026. All Rights Reserved.
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="copyright">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <p>© 2025 All Rights Reserved by Your Company</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('hamburgerBtn').addEventListener('click', function () {
+            document.getElementById('navMenu').classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>
