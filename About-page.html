@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -47,9 +48,9 @@
                     <div
                         class="d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center gap-3">
 
-                        <a href="#" class="text-white text-decoration-none small">Company News</a>
-                        <a href="#" class="text-white text-decoration-none small">Faq</a>
-                        <a href="#" class="text-white text-decoration-none small">Contact</a>
+                        <a href="#" class="text-white text-decoration-none ">Company News</a>
+                        <a href="#" class="text-white text-decoration-none ">Faq</a>
+                        <a href="#" class="text-white text-decoration-none ">Contact</a>
 
                         <span class="d-none d-md-inline">|</span>
 
@@ -101,10 +102,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">projects</a>
+                        <a class="nav-link" href="index.html#projects">projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link" href="index.html#blog">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact-page.html">Contact</a>
@@ -131,92 +132,121 @@
             </div>
         </div>
     </nav>
-    <div class="container bg- py-5 ">
+    <div class="agency-about-section py-5">
 
-        <div class="bg-white pt-3 ">
+        <div class="container">
 
-            <!-- Heading Section -->
-            <p class="text-secondary small mb-2 fw-semibold">About Sunseaz</p>
+            <div class="agency-about-wrapper">
 
-            <h1 class="fw-bold display-5 mb-4">
-                Smart and effective <br>
-                business agency.
-            </h1>
+                <p class="agency-about-subtitle">About Sunseaz</p>
 
-            <!-- Image Section -->
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="img-fluid hero-img w-100" alt="Business meeting">
+                <h1 class="agency-about-title">
+                    Smart and effective <br>
+                    business agency.
+                </h1>
+
+                <div class="agency-about-image">
+
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1170&auto=format&fit=crop"
+                        class="img-fluid w-100" alt="Business meeting">
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
-    <section class="about-section bg-light  position-relative overflow-hidden  py-5">
+    <section class="about-section bg-light py-5">
         <div class="container">
             <div class="row align-items-center gx-5">
+
+                <!-- LEFT -->
                 <div class="col-lg-6">
-                    <div class="position-relative about-images">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-                            class="img-fluid rounded-4 main-img" alt="Business">
-                        <div class="experience-box position-absolute text-white 
-                      d-flex flex-column justify-content-center align-items-center rounded-4">
-                            <h2 class="fw-bold mb-1">25+</h2>
-                            <span class="small">Year of experience</span>
+                    <div class="about-images">
+
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1170&auto=format&fit=crop"
+                            class="main-img" alt="Business">
+
+                        <div class="experience-box">
+                            <h2>25+</h2>
+                            <p>Year of experience</p>
                         </div>
+
                         <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-                            class="small-img position-absolute rounded-4" alt="Meeting">
+                            class="small-img rounded-4 d-none d-lg-block" alt="Meeting">
                     </div>
                 </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <p class="text-uppercase fw-bold small mb-3 tracking">
-                        MORE ABOUT US
-                    </p>
-                    <h2 class="fw-bold about-title mb-4">
-                        Empowering <span class="text-muted">You</span> to
+
+                <!-- RIGHT -->
+                <div class="col-lg-6 pt-5 pt-md-0">
+
+                    <p class="about-subtitle">MORE ABOUT US</p>
+
+                    <h2 class="about-title">
+                        Empowering <span>You</span> to
                     </h2>
-                    <p class="text-muted about-text mb-4">
+
+                    <p class="about-text">
                         Porttitor ornare fermentum aliquam pharetra ut facilisis gravida risus suscipit.
                         dui feugiat fusce conubia ridiculus tristique parturient natoque vulputate risu.
                     </p>
-                    <ul class="list-unstyled mb-4">
-                        <li class="mb-3">
-                            <i class="fa-solid fa-circle-check me-2"></i>
-                            24/7 Call Services Available
-                        </li>
-                        <li class="mb-3">
-                            <i class="fa-solid fa-circle-check me-2"></i>
-                            Great Skilled Consultant
-                        </li>
-                        <li class="mb-3">
-                            <i class="fa-solid fa-circle-check me-2"></i>
-                            Expert Team Members
-                        </li>
+
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-circle-check"></i> 24/7 Call Services Available</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Great Skilled Consultant</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Expert Team Members</li>
                     </ul>
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <!-- LEFT: Call Section -->
-                        <div class="d-flex align-items-center gap-1">
-                            <div class="call-box d-flex justify-content-center align-items-center ">
-                                <i class="fa-solid fa-phone text-white"></i>
+
+                    <div class="about-bottom">
+
+                        <div class="call-info">
+                            <div class="call-icon">
+                                <i class="fa-solid fa-phone-volume"></i>
                             </div>
+
                             <div>
-                                <small class="text-muted d-block px-2">Call us anytime</small>
-                                <h5 class="fw-semibold mb-0 px-2">+256 56778.5678</h5>
+                                <small>Call us anytime</small>
+                                <h5>+256 56778.5678</h5>
                             </div>
                         </div>
-                        <!-- RIGHT: Signature -->
-                        <h4 class="signature mb-0">Jonathon Doe</h4>
+
+                        <h4 class="signature">Jonathon Doe</h4>
 
                     </div>
+
                 </div>
 
             </div>
         </div>
     </section>
-    <section class="team-section py-5">
-        <div class="container text-center">
+    <section class="team-section bg-light py-5">
 
-            <span class="small-title">EXPERT MEMBERS</span>
-            <h2 class="main-title mb-5">Professionals</h2>
+        <div class="container">
 
+            <!-- Heading -->
+            <div class="section-heading text-center">
+
+                <!-- top line -->
+                <div class="line-title">
+                    <span>OUR TRUSTED CLIENTS</span>
+                </div>
+
+                <!-- main heading area -->
+                <div class="heading-wrapper">
+
+                    <h1 class="bg-text">Members</h1>
+
+                    <span class="small-title">EXPERT MEMBERS</span>
+
+                    <h2 class="main-title">Professionals</h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- Carousel -->
             <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
@@ -226,7 +256,7 @@
                         <div class="row g-4">
 
                             <!-- MEMBER 1 -->
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600"
@@ -239,7 +269,7 @@
                             </div>
 
                             <!-- MEMBER 2 -->
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600"
@@ -252,7 +282,7 @@
                             </div>
 
                             <!-- MEMBER 3 -->
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600"
@@ -265,7 +295,7 @@
                             </div>
 
                             <!-- MEMBER 4 -->
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600"
@@ -280,11 +310,12 @@
                         </div>
                     </div>
 
+
                     <!-- SLIDE 2 -->
                     <div class="carousel-item">
                         <div class="row g-4">
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600"
@@ -296,7 +327,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=600"
@@ -308,7 +339,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=600"
@@ -320,7 +351,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600"
@@ -335,11 +366,12 @@
                         </div>
                     </div>
 
+
                     <!-- SLIDE 3 -->
                     <div class="carousel-item">
                         <div class="row g-4">
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600"
@@ -351,7 +383,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600"
@@ -363,7 +395,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600"
@@ -375,7 +407,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
                                     <div class="img-box">
                                         <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600"
@@ -392,15 +424,18 @@
 
                 </div>
 
-                <!-- DOTS -->
-                <div class="carousel-indicators custom-dots mt-4">
+
+                <!-- Indicators -->
+                <div class="carousel-indicators team-dots mt-4">
                     <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active"></button>
                     <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1"></button>
                     <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2"></button>
                 </div>
 
             </div>
+
         </div>
+
     </section>
     <section class="about-section bg-light py-5">
         <div class="about-container">
@@ -429,6 +464,17 @@
                         <p>Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida rutrum.</p>
                     </div>
                 </div>
+                <div class="about-buttons">
+
+                    <a href="contact-page.html" class="contact-btn">Contact Us</a>
+
+                    <div class="play-btn">
+                        <span class="play-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                    </div>
+
+                </div>
             </div>
             <!-- RIGHT SIDE -->
             <div class="about-right">
@@ -441,8 +487,11 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid py-5 ">
-        <div class="testimonial-section ">
+    <section class="container-fluid bg-white py-5">
+        <div class="testimonial-section">
+
+            <!-- Background Text -->
+            <h1 class="bg-heading">Review</h1>
 
             <div class="top-nav">
                 <div>
@@ -456,10 +505,13 @@
                     <button class="nav-btn" id="nextBtn">&#8594;</button>
                 </div>
             </div>
+
             <div class="testimonial-card">
+
                 <div class="testimonial-image">
                     <img id="clientImage" src="https://randomuser.me/api/portraits/men/32.jpg">
                 </div>
+
                 <div class="testimonial-content">
                     <div class="testimonial-text" id="testimonialText">
                         I can't recommend this place enough. It's perfect for special occasions and memorable
@@ -475,7 +527,7 @@
         </div>
     </section>
     <section class="clients py-5 bg-light">
-        <div class="container d-flex  align-items-center justify-content-start">
+        <div class="container d-flex  align-items-center  gap-3justify-content-start">
             <span class="client-title fw-bold">OUR TRUSTED CLIENTS</span>
             <div class="client-logos d-flex justify-content-center align-items-center gap- 5 flex-wrap">
                 <img src="./images/instagram.png" alt="Toy Jesh">
@@ -484,6 +536,8 @@
                 <img src="./images/social.png" alt="Calsa">
                 <img src="./images/microsoft.png" alt="Contex">
                 <img src="./images/tesla.png" alt="Toy Jesh">
+                <img src="./images/google.png">
+                
             </div>
         </div>
     </section>
@@ -520,101 +574,99 @@
             <div class="row">
 
                 <!-- Logo Section -->
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="footer-logo-area">
+                <div class="col-lg-4 col-md-6 col-12">
+                <div class="footer-logo-area">
 
-                        <img src="./images/headerlogo.png" alt="logo">
+                    <img src="./images/headerlogo.png" alt="logo">
 
-                        <p class="disc">
-                            We specialize in providing cutting-edge technology solutions that empower businesses
-                            to thrive in the digital age.
-                        </p>
+                    <p class="disc">
+                        We specialize in providing cutting-edge technology solutions that empower businesses
+                        to thrive in the digital age.
+                    </p>
 
-                        <ul class="social-icons">
+                    <ul class="social-icons">
 
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
 
-                        </ul>
-
-                    </div>
-                </div>
-
-
-                <!-- Quick Links -->
-                <div class="col-lg-4 col-md-4 col-12">
-
-                    <h5 class="footer-title">Quick Links</h5>
-
-                    <div class="quick-links">
-
-                        <ul>
-                            <li><a href="#"><i class="fa fa-arrow-right"></i> Home</a></li>
-                            <li><a href="#"><i class="fa fa-arrow-right"></i> About</a></li>
-                            <li><a href="#"><i class="fa fa-arrow-right"></i> Services</a></li>
-                            <li><a href="#"><i class="fa fa-arrow-right"></i> Portfolio</a></li>
-                        </ul>
-
-                        <ul>
-                            <li><a href="#"><i class="fa fa-arrow-right"></i> Blog</a></li>
-                            <li><a href="#"><i class="fa fa-arrow-right"></i> FAQ</a></li>
-                            <li><a href="#"><i class="fa fa-arrow-right"></i> Contact</a></li>
-                        </ul>
-
-                    </div>
+                    </ul>
 
                 </div>
+            </div>
 
 
-                <!-- Contact -->
-                <div class="col-lg-4 col-md-4 col-12 f-contact">
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <h5 class="footer-title">Quick Links</h5>
 
-                    <h5 class="footer-title">Contact Us</h5>
+                <div class="quick-links">
 
-                    <div class="footer-contact">
+                    <ul>
+                        <li><a href="index.html"><i class="fa fa-arrow-right"></i> Home</a></li>
+                        <li><a href="About-page.html"><i class="fa fa-arrow-right"></i> About</a></li>
+                        <li><a href="services.html"><i class="fa fa-arrow-right"></i> Services</a></li>
+                        <li><a href="contact-page.html"><i class="fa fa-arrow-right"></i> Contact</a></li>
+                    </ul>
 
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-
-                            <div class="text">
-                                <h6>Call Us</h6>
-                                <p>+91 9876543210</p>
-                            </div>
-                        </div>
-
-
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-
-                            <div class="text">
-                                <h6>Email</h6>
-                                <p>info@gmail.com</p>
-                            </div>
-                        </div>
-
-
-                        <div class="contact-item">
-                            <div class="icon">
-                                <i class="fa fa-map-marker-alt"></i>
-                            </div>
-
-                            <div class="text">
-                                <h6>Address</h6>
-                                <p>Hyderabad, India</p>
-                            </div>
-                        </div>
-
-                    </div>
+                    <ul>
+                        <li><a href="index.html#blog"><i class="fa fa-arrow-right"></i> Blog</a></li>
+                        <li><a href="#"><i class="fa fa-arrow-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fa fa-arrow-right"></i> Contact</a></li>
+                    </ul>
 
                 </div>
 
             </div>
+
+
+            <!-- Contact -->
+            <div class="col-lg-4 col-md-6 col-12 f-contact mx-md-auto">
+            <h5 class="footer-title">Contact Us</h5>
+
+            <div class="footer-contact">
+
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+
+                    <div class="text">
+                        <h6>Call Us</h6>
+                        <p>+91 9876543210</p>
+                    </div>
+                </div>
+
+
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+
+                    <div class="text">
+                        <h6>Email</h6>
+                        <p>info@gmail.com</p>
+                    </div>
+                </div>
+
+
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fa fa-map-marker-alt"></i>
+                    </div>
+
+                    <div class="text">
+                        <h6>Address</h6>
+                        <p>Hyderabad, India</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
 
         </div>
 

@@ -44,6 +44,7 @@ body {
   color: #0d6efd;
 }
 
+
 @media (min-width: 992px) {
   .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -54,7 +55,7 @@ body {
   background-color: #0f172a;
   color: #fff;
   border-radius: 30px;
-  padding: 8px 22px;
+  padding: 10px 22px !important;
   transition: 0.3s;
 }
 
@@ -154,7 +155,7 @@ body {
 }
 
 /* ================= ABOUT ================= */
-.about-images {
+/* .about-images {
   max-width: 520px;
 }
 
@@ -205,7 +206,7 @@ body {
   font-family: cursive;
   font-size: 30px;
   color: #1f2a30;
-}
+} */
 
 /* ================= SERVICES ================= */
 .services-section {
@@ -291,7 +292,7 @@ body {
 .icon-circle {
   width: 90px;
   height: 90px;
-  background: #ffffff;
+  background:#e4e3dc;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -384,9 +385,9 @@ body {
 
 /* Active dot style */
 .carousel-indicators-custom button.active {
-  width: 28px;
+  /* width: 28px;
   border-radius: 20px;
-  background-color: #0d6efd;
+  background-color: #0d6efd; */
 }
 
 /* -------------------- */
@@ -430,9 +431,9 @@ body {
 .feature-icon {
   width: 55px;
   height: 55px;
-  /* background: #fff; */
+  background:grey;
   border-radius: 50%;
-  /* box-shadow: 0 5px 15px rgba(0,0,0,0.08); */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,7 +441,7 @@ body {
 }
 
 .feature-icon img {
-  width: 25px;
+  width: 35px;
 }
 
 .feature-text h4 {
@@ -473,11 +474,11 @@ body {
 
 .image-overlay {
   position: absolute;
-  width: 70%;
-  bottom: 50px;
-  left: -80px;
+  width: 55%;
+  bottom: 120px;
+  left: 0px;
   border-radius: 12px;
-  border: 8px solid #f2f2f2;
+  border: 5px solid #f2f2f2;
 }
 
 /* ================= TEAM ================= */
@@ -676,8 +677,57 @@ body {
 }
 
 .image-box img {
-  width: 100%;
-  object-fit: cover;
+  /* width: 100%;
+  object-fit: cover; */
+      position: absolute;
+    width: 38% !important;
+    height: 550px !important;
+    right: 135px;
+    border-radius:12px;
+}
+/* Make container relative for desktop overlap */
+.appointment-section .container{
+position:relative;
+}
+
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width:992px){
+
+.image-box img{
+position:relative !important;
+width:100% !important;
+height:400px !important;
+right:0 !important;
+margin-top:30px;
+}
+
+.form-row{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width:576px){
+
+.image-box img{
+height:300px !important;
+}
+
+.form-box{
+padding:30px;
+}
+
 }
 
 /* ================= TESTIMONIAL ================= */
@@ -717,7 +767,7 @@ body {
   border-radius: 50%;
   border: none;
   background: #1f2a32;
-  color: #fff;
+  /* color: #fff; */
   cursor: pointer;
   transition: 0.3s;
 }
@@ -966,7 +1016,7 @@ body {
 /* Bottom dark background */
 .bottom-bg {
   position: absolute;
-  top: 250px;
+  /* top: 250px; */
   width: 100%;
   height: 300px;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -1240,6 +1290,7 @@ body {
   width: 45%;
   height: 100%;
   overflow: hidden;
+  padding:3px;
 }
 
 .thumbnail img {
@@ -1510,7 +1561,7 @@ body {
 .small {
   letter-spacing: 2px;
   font-size: 12px;
-  color: gray;
+  color: white;
 }
 
 .header {
@@ -1616,7 +1667,7 @@ body {
 .pre {
   font-size: 13px;
   letter-spacing: 2px;
-  color: #777;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -1753,7 +1804,7 @@ body {
 
 .thumbnail img {
   width: 100% !important;
-  height: auto !important;
+  /* height: auto !important; */
   object-fit: cover;
   border-radius: 6px;
 }
@@ -1773,7 +1824,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #1e293b;
+  color:white;
 }
 
 .disc {
@@ -1861,6 +1912,7 @@ body {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 40px;
+  color:white;
 }
 
 /* Timeline Wrapper */
@@ -1948,7 +2000,7 @@ body {
 
 .inner-content .disc {
   font-size: 14px;
-  /* color:#d6d6d6; */
+  color:black;
   line-height: 1.6;
 }
 
@@ -2166,12 +2218,12 @@ ABOUT SECTION RESPONSIVE
     margin-bottom: 30px;
   }
 
-  .experience-box {
+  /* .experience-box {
     position: absolute !important;
     bottom: 10px;
     left: 10px;
     padding: 12px 16px;
-  }
+  } */
 
   .small-img {
     width: 120px;
@@ -2196,10 +2248,10 @@ ABOUT SECTION RESPONSIVE
     display: none;
   }
 
-  .experience-box {
+  /* .experience-box {
     position: relative;
     margin: 15px auto;
-  }
+  } */
 
   .call-box {
     width: 45px;
@@ -2288,10 +2340,10 @@ ABOUT SECTION RESPONSIVE
     font-size: 32px;
   }
 
-  .image-overlay {
+  /* .image-overlay {
     left: 20px;
     bottom: -30px;
-  }
+  } */
 
 }
 
@@ -2309,13 +2361,13 @@ ABOUT SECTION RESPONSIVE
     align-items: flex-start;
   }
 
-  .image-overlay {
+  /* .image-overlay {
     position: relative;
     left: 0;
     bottom: 0;
     width: 70%;
     margin-top: 20px;
-  }
+  } */
 
 }
 
@@ -2351,12 +2403,12 @@ ABOUT SECTION RESPONSIVE
   }
 
   /* experience box position */
-  .experience-box {
+  /* .experience-box {
     width: 130px;
     height: 130px;
     top: 25px;
     left: 25px;
-  }
+  } */
 
   /* center text content slightly */
   .about-title {
@@ -2463,7 +2515,7 @@ MOBILE (max 767px)
     display: flex;
     flex-direction: column;
     gap: 35px;
-    padding: 0 15px;
+    padding: 0 ;
   }
 
   /* IMAGE FIRST */
@@ -2481,12 +2533,12 @@ MOBILE (max 767px)
     width: 100%;
   }
 
-  .image-overlay {
+  /* .image-overlay {
     position: absolute;
     width: 55%;
     bottom: -20px;
     left: 10px;
-  }
+  } */
 
 }
 
@@ -2610,8 +2662,8 @@ MOBILE (max 767px)
 
   /* FOOTER */
   .footer-section .row {
-    flex-direction: column;
-    text-align: center;
+    /* flex-direction: column; */
+    /* text-align: center; */
   }
 
   .footer-section .float-end {
@@ -2711,9 +2763,9 @@ TABLET DEVICES
   }
 
   .footer-contact .contact-item {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
   }
 
 }
@@ -2959,7 +3011,7 @@ MOBILE DEVICES
 
 .service-card .thumbnail img {
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
   object-fit: cover;
 }
 
@@ -3168,7 +3220,7 @@ MOBILE DEVICES
 
 .single-testimonials-style-five .thumbnail img {
   width: 120px;
-  height: 120px;
+  /* height: 120px; */
   object-fit: cover;
   border-radius: 12px;
 }
@@ -3210,3 +3262,122 @@ MOBILE DEVICES
     font-size: 16px !important;
   }
 }
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+  transition: transform 0.3s;
+  height:260px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.read-more .arrow-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* background: #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.read-more .arrow-circle:hover {
+  background: #ff6600;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #ff6600;
+}
+#servicesCarousel {
+  position: relative;       /* Needed for absolute positioning inside */
+  padding-bottom: 40px;     /* Space for indicators */
+}
+
+#servicesCarousel .carousel-indicators {
+  position: absolute;
+  bottom:-9px;             /* Distance from bottom of carousel */
+  left: 50%;                /* Start at horizontal center */
+  transform: translateX(-125%); /* Center horizontally */
+  display: flex;
+  justify-content: center;
+  gap: 10px;                /* Space between dots */
+  z-index: 10;
+}
+
+#servicesCarousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #000;   /* visible on white background */
+  opacity: 0.5;
+  border: none;
+  transition: all 0.3s;
+}
+
+#servicesCarousel .carousel-indicators .active {
+  /* background-color: #ff6600; */
+  opacity: 1;
+}
+/* Indicator container */
+.custom-indicators{
+position:absolute;
+top:-60px;
+right:20px;
+left:auto;
+margin:0;
+}
+
+/* Default dots */
+.custom-indicators button{
+width:8px;
+height:8px;
+border-radius:50%;
+background:#9aa8b3;
+border:none;
+margin:0 6px;
+opacity:1;
+}
+
+/* Active circle */
+.custom-indicators .active{
+width:22px;
+height:22px;
+border:2px solid #3b4c5a;
+background:transparent;
+position:relative;
+}
+
+/* Inner dot */
+.custom-indicators .active::after{
+content:"";
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+width:6px;
+height:6px;
+background:#3b4c5a;
+border-radius:50%;
+}
+@media (max-width:768px){
+.custom-indicators{
+top:-40px;
+right:10px;
+}
+}
+
