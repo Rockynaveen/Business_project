@@ -176,9 +176,7 @@ body {
 }
 
 .subscribe-box button {
-  padding: 14px 24px;
-  background: #000;
-  color: #fff;
+  padding: 12px 24px;
   border: none;
   white-space: nowrap;
 }
@@ -265,7 +263,7 @@ body {
   }
 
   .main-img {
-    margin-top: 20px;
+    margin-top: -85px;
     margin-bottom: 25px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
@@ -572,4 +570,277 @@ body {
     gap: 10px;
   }
 
+}
+/* ── NAVBAR ─────────────────────────────────────────────── */
+.navbar {
+  padding: 0 0;
+  height: 80px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* ── NAV LINKS ───────────────────────────────────────────── */
+.navbar-nav .nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  /* padding: 8px 14px !important; */
+  /* transition: color 0.2s ease; */
+  margin: 0 12px;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+}
+
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: #2292e8 !important;
+}
+
+/* Dropdown toggle caret color */
+.navbar-nav .dropdown-toggle::after {
+  color: #555;
+  vertical-align: middle;
+}
+
+/* ── DROPDOWN MENU ───────────────────────────────────────── */
+.dropdown-menu {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 6px 0;
+  min-width: 180px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10) !important;
+  margin-top: 4px;
+}
+
+.dropdown-item {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: #333;
+  padding: 9px 18px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #fff5ee;
+  color: #e87722;
+}
+
+/* ── RIGHT ACTIONS ───────────────────────────────────────── */
+.header-actions {
+  gap: 10px;
+}
+
+/* Search icon */
+.search-wrapper {
+  cursor: pointer;
+  color: #333;
+  font-size: 17px;
+  padding: 6px;
+  transition: color 0.2s;
+}
+
+.search-wrapper:hover {
+  color: #e87722;
+}
+
+/* Get Quote button */
+.quote-btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border: none;
+  padding: 10px 22px !important;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.quote-btn:hover {
+  background-color: #e87722 !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+/* Hamburger / bars icon */
+.menu-toggle {
+  cursor: pointer;
+  color: #333;
+  font-size: 20px;
+  padding: 6px;
+  transition: color 0.2s;
+}
+
+.menu-toggle:hover {
+  color: #e87722;
+}
+
+/* ── MOBILE RESPONSIVE ───────────────────────────────────── */
+@media (max-width: 991px) {
+  .navbar {
+    height: auto;
+    padding: 12px 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 16px !important;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .header-actions {
+    padding: 12px 16px;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 8px;
+  }
+
+  .dropdown-menu {
+    box-shadow: none !important;
+    border: none;
+    background: #fafafa;
+    border-radius: 0;
+  }
+}
+/* SECTION BACKGROUND */
+
+.newsletter{
+    background:#f4f4f6;
+    padding:100px 0;
+}
+
+/* SMALL TEXT */
+
+.sub-text{
+    color:#6c7a89;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+/* BIG TITLE */
+
+.news-title{
+    font-size:56px;
+    font-weight:700;
+    color:#1f2a37;
+    line-height:1.2;
+}
+
+/* SUBSCRIBE BOX */
+
+.subscribe-box{
+    background:#1f2a37;
+    padding:10px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    max-width:520px;
+}
+
+/* INPUT */
+
+.subscribe-box input{
+    flex:1;
+    border:none;
+    background:transparent;
+    padding:10px;
+    color:#333;
+    font-size:16px;
+    outline:none;
+}
+
+/* PLACEHOLDER */
+
+.subscribe-box input::placeholder{
+    color:#cbd5e1;
+}
+
+/* BUTTON */
+
+.subscribe-btn{
+    background:#ffffff !important;
+    border:none;
+    padding:14px 26px;
+    border-radius:10px;
+    font-weight:600;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* BUTTON HOVER */
+
+.subscribe-btn:hover{
+    background:#e5e5e5;
+}
+@media (max-width:768px){
+
+.news-title{
+    font-size:36px;
+}
+
+.subscribe-box{
+    flex-direction:column;
+    align-items:stretch;
+}
+
+.subscribe-btn{
+    width:100%;
+}
+
+}
+/* CLIENTS */
+.clients-section {
+    padding: 36px 0 !important;
+    background: #fff !important;
+}
+
+.clients-inner {
+    display: flex !important;
+    align-items: center !important;
+    gap: 28px !important;
+    flex-wrap: wrap !important;
+}
+
+.clients-label {
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    color: #333 !important;
+    white-space: nowrap !important;
+    text-transform: uppercase !important;
+}
+
+.clients-logos {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 28px !important;
+}
+
+.client-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    color: #555 !important;
+}
+
+@media (max-width: 767px) {
+    .clients-inner {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+    }
+
+    .clients-logos {
+        gap: 16px !important;
+    }
 }

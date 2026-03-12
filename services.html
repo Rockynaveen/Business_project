@@ -12,6 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business</title>
 </head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+</style>
 
 
 
@@ -69,6 +76,50 @@
 
     </div>
 </div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- SIDEBAR PANEL -->
+<div class="sidebar-panel" id="sidebarPanel">
+
+    <button class="sidebar-close" id="sidebarClose">✕</button>
+
+    <!-- Logo -->
+    <div class="sidebar-logo mb-4">
+        <img src="./images/headerlogo.png" alt="Logo" height="60">
+    </div>
+
+    <!-- Description -->
+    <p class="sidebar-desc">
+        We must explain to you how all seds this mistakens idea denouncing pleasures and praising account. All seds this
+        mistakens idea denouncing pleasures.
+    </p>
+
+    <!-- Get In Touch -->
+    <h5 class="sidebar-contact-title">Get In Touch</h5>
+
+    <ul class="sidebar-contact-list">
+        <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 9177130808</span>
+        </li>
+        <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@sunseaz.com</span>
+        </li>
+        <li>
+            <i class="fa-solid fa-globe"></i>
+            <span>www.sunseaz.com</span>
+        </li>
+        <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Madhapur, Hyderabad</span>
+        </li>
+    </ul>
+
+</div>
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
 
@@ -83,13 +134,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                        Pages
-                    </a>
-                    <ul class="dropdown-menu shadow">
-                        <li><a class="dropdown-item" href="About-page.html">About -Us</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="About-page.html">About Us</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -132,6 +178,7 @@
         </div>
     </div>
 </nav>
+
 <div class="container my-5">
 
     <!-- Title -->
@@ -280,7 +327,7 @@
                                 <span class="number">01</span>
                             </div>
                             <h5 class="title">Client Discovery</h5>
-                            <p class="disc">
+                            <p class="disc1">
                                 The agency begins by understanding the client's needs, goals, and
                             </p>
                         </div>
@@ -434,8 +481,8 @@
             </div>
         </div>
     </div>
-    <section class="clients py-5 bg-light">
-        <div class="container d-flex  align-items-center  gap-3justify-content-start">
+    <section class="clients py-lg-5 py-3bg-light">
+        <div class="container d-flex  align-items-center  gap-5 justify-content-center">
             <span class="client-title fw-bold">OUR TRUSTED CLIENTS</span>
             <div class="client-logos d-flex justify-content-center align-items-center gap- 5 flex-wrap">
                 <img src="./images/instagram.png" alt="Toy Jesh">
@@ -451,7 +498,7 @@
     </section>
 
     <!-- .......testmonials ..... -->
-    <div class="rts-testimonials-area-five bg_image rts-section-gapBottom  bg-light">
+    <div class="rts-testimonials-area-five bg_image rts-section-gapBottom  py-lg-5 py-3 bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -569,7 +616,7 @@
             </div>
         </div>
     </div>
-    <section class="newsletter">
+    <section class="newsletter py-lg-5 py-3">
         <div class="container ">
             <div class="row align-items-center">
 
@@ -599,7 +646,7 @@
             <div class="row">
 
                 <!-- Logo Section -->
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-12 col-12">
                     <div class="footer-logo-area">
 
                         <img src="./images/headerlogo.png" alt="logo">
@@ -623,7 +670,7 @@
 
 
                 <!-- Quick Links -->
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-12 col-12">
                     <h5 class="footer-title">Quick Links</h5>
 
                     <div class="quick-links">
@@ -647,7 +694,7 @@
 
 
                 <!-- Contact -->
-                <div class="col-lg-4 col-md-6 col-12 f-contact mx-md-auto">
+                <div class="col-lg-4 col-md-12 col-12 f-contact mx-md-auto">
                     <h5 class="footer-title">Contact Us</h5>
 
                     <div class="footer-contact">
@@ -816,6 +863,34 @@
             }
         });
     </script>
+    <script>
+        // ===== SIDEBAR TOGGLE =====
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sidebarPanel = document.getElementById('sidebarPanel');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const sidebarClose = document.getElementById('sidebarClose');
+
+        menuToggle.addEventListener('click', () => {
+            sidebarPanel.classList.add('open');
+            sidebarOverlay.classList.add('open');
+        });
+
+        sidebarClose.addEventListener('click', () => {
+            sidebarPanel.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        });
+
+        sidebarOverlay.addEventListener('click', () => {
+            sidebarPanel.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        });
+    </script>
+
+    <script>document.querySelectorAll('*').forEach(el => {
+  if (el.offsetWidth > document.documentElement.offsetWidth) {
+    console.log('Overflowing:', el, el.offsetWidth);
+  }
+});</script>
 
 
     </body>

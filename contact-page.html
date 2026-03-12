@@ -1005,8 +1005,6 @@
 </head>
 
 <body>
-
-
     <div class="top-bar bg-dark text-white py-2">
         <div class="container">
 
@@ -1062,6 +1060,51 @@
 
         </div>
     </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- SIDEBAR PANEL -->
+    <div class="sidebar-panel" id="sidebarPanel">
+
+        <button class="sidebar-close" id="sidebarClose">✕</button>
+
+        <!-- Logo -->
+        <div class="sidebar-logo mb-4">
+            <img src="./images/headerlogo.png" alt="Logo" height="60">
+        </div>
+
+        <!-- Description -->
+        <p class="sidebar-desc">
+            We must explain to you how all seds this mistakens idea denouncing pleasures and praising account. All seds
+            this
+            mistakens idea denouncing pleasures.
+        </p>
+
+        <!-- Get In Touch -->
+        <h5 class="sidebar-contact-title">Get In Touch</h5>
+
+        <ul class="sidebar-contact-list">
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 9177130808</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@sunseaz.com</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-globe"></i>
+                <span>www.sunseaz.com</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Madhapur, Hyderabad</span>
+            </li>
+        </ul>
+
+    </div>
+
+
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
 
@@ -1076,13 +1119,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            Pages
-                        </a>
-                        <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="About-page.html">About -Us</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-page.html">About Us</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -1124,7 +1162,8 @@
                 </div>
             </div>
         </div>
-    </nav> <!-- CONTACT SECTION -->
+    </nav>
+    <!-- CONTACT SECTION -->
     <section class="contact-section">
         <div class="deco-circ"></div>
         <svg class="deco-arrow" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1188,8 +1227,8 @@
         </div>
     </div>
 
-    <section class="clients my-5">
-        <div class="container d-flex  align-items-center justify-content-start">
+    <section class="clients py-5 bg-light">
+        <div class="container d-flex  align-items-center  gap-5 justify-content-center">
             <span class="client-title fw-bold">OUR TRUSTED CLIENTS</span>
             <div class="client-logos d-flex justify-content-center align-items-center gap- 5 flex-wrap">
                 <img src="./images/instagram.png" alt="Toy Jesh">
@@ -1198,6 +1237,8 @@
                 <img src="./images/social.png" alt="Calsa">
                 <img src="./images/microsoft.png" alt="Contex">
                 <img src="./images/tesla.png" alt="Toy Jesh">
+                <img src="./images/google.png">
+
             </div>
         </div>
     </section>
@@ -1232,7 +1273,7 @@
             <div class="row">
 
                 <!-- Logo Section -->
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4  col-12">
                     <div class="footer-logo-area">
 
                         <img src="./images/headerlogo.png" alt="logo">
@@ -1256,7 +1297,7 @@
 
 
                 <!-- Quick Links -->
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4  col-12">
                     <h5 class="footer-title">Quick Links</h5>
 
                     <div class="quick-links">
@@ -1280,7 +1321,7 @@
 
 
                 <!-- Contact -->
-                <div class="col-lg-4 col-md-6 col-12 f-contact mx-md-auto">
+                <div class="col-lg-4  col-12 f-contact mx-md-auto">
                     <h5 class="footer-title">Contact Us</h5>
 
                     <div class="footer-contact">
@@ -1354,6 +1395,31 @@
             document.getElementById('navMenu').classList.toggle('open');
         });
     </script>
+    <script>
+        // ===== SIDEBAR TOGGLE =====
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sidebarPanel = document.getElementById('sidebarPanel');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const sidebarClose = document.getElementById('sidebarClose');
+
+        menuToggle.addEventListener('click', () => {
+            sidebarPanel.classList.add('open');
+            sidebarOverlay.classList.add('open');
+        });
+
+        sidebarClose.addEventListener('click', () => {
+            sidebarPanel.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        });
+
+        sidebarOverlay.addEventListener('click', () => {
+            sidebarPanel.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        });
+    </script>
+
+
+
 </body>
 
 </html>

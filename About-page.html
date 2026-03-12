@@ -69,6 +69,47 @@
 
         </div>
     </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- SIDEBAR PANEL -->
+    <div class="sidebar-panel" id="sidebarPanel">
+
+        <button class="sidebar-close" id="sidebarClose">✕</button>
+
+        <!-- Logo -->
+        <div class="sidebar-logo mb-4">
+            <img src="./images/headerlogo.png" alt="Logo" height="60">
+        </div>
+
+        <!-- Description -->
+        <p class="sidebar-desc">
+            We must explain to you how all seds this mistakens idea denouncing pleasures and praising account. All seds
+            this mistakens idea denouncing pleasures.
+        </p>
+
+        <!-- Get In Touch -->
+        <h5 class="sidebar-contact-title">Get In Touch</h5>
+
+        <ul class="sidebar-contact-list">
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 9177130808</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@sunseaz.com</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-globe"></i>
+                <span>www.sunseaz.com</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Madhapur, Hyderabad</span>
+            </li>
+        </ul>
+
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
 
@@ -83,13 +124,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            Pages
-                        </a>
-                        <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="About-page.html">About -Us</a></li>
-                        </ul>
+                    <li class="nav-item">
+                    <a class="nav-link" href="About-page.html">About Us</a>
+                    </li>
+
                     </li>
 
                     <li class="nav-item dropdown">
@@ -132,6 +170,7 @@
             </div>
         </div>
     </nav>
+
     <div class="agency-about-section py-5">
 
         <div class="container">
@@ -220,7 +259,7 @@
             </div>
         </div>
     </section>
-    <section class="team-section bg-light py-5">
+    <section class="team-section bg-white py-5">
 
         <div class="container">
 
@@ -235,8 +274,7 @@
                 <!-- main heading area -->
                 <div class="heading-wrapper">
 
-                    <h1 class="bg-text">Members</h1>
-
+                    <span class="bg-text d-none d-md-block">Members</span>
                     <span class="small-title">EXPERT MEMBERS</span>
 
                     <h2 class="main-title">Professionals</h2>
@@ -253,8 +291,7 @@
 
                     <!-- SLIDE 1 -->
                     <div class="carousel-item active">
-                        <div class="row g-4">
-
+                        <div class="row g-4 team-scroll">
                             <!-- MEMBER 1 -->
                             <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
@@ -313,7 +350,7 @@
 
                     <!-- SLIDE 2 -->
                     <div class="carousel-item">
-                        <div class="row g-4">
+                        <div class="row g-4 team-scroll">
 
                             <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
@@ -369,7 +406,7 @@
 
                     <!-- SLIDE 3 -->
                     <div class="carousel-item">
-                        <div class="row g-4">
+                        <div class="row g-4 team-scroll">
 
                             <div class="col-md-6 col-lg-3 col-12">
                                 <div class="team-card">
@@ -434,60 +471,76 @@
 
             </div>
 
+
+
         </div>
 
     </section>
-    <section class="about-section bg-light py-5">
+
+
+
+    <section class="about-section bg-light py-lg-5 py-3">
+
         <div class="about-container">
-            <!-- LEFT SIDE -->
+
+            <!-- LEFT -->
             <div class="about-left">
-                <p class="about-subtitle fw-semibold">JUST A CONSULTANCY</p>
+
+                <p class="about-subtitle">JUST A CONSULTANCY</p>
 
                 <h2 class="about-title">
                     We know how to manage business globally
                 </h2>
+
                 <div class="about-feature">
+
                     <div class="feature-icon">
-                        <i class="fa-solid fa-user-astronaut"></i>
+                        <img src="./images/talk.png">
                     </div>
+
                     <div class="feature-text">
                         <h4>Best Business Consulting</h4>
-                        <p>Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida rutrum.</p>
+                        <p>Fusce condimentum mattis placerat odio donec lacus porta torquent.</p>
                     </div>
+
                 </div>
+
                 <div class="about-feature">
+
                     <div class="feature-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                        <img src="./images/24-hours (1).png">
                     </div>
+
                     <div class="feature-text">
                         <h4>24/7 Customer Support</h4>
-                        <p>Fusce condimentum mattis placerat odio donec lacus porta torquent, mauris gravida rutrum.</p>
-                    </div>
-                </div>
-                <div class="about-buttons">
-
-                    <a href="contact-page.html" class="contact-btn">Contact Us</a>
-
-                    <div class="play-btn">
-                        <span class="play-icon">
-                            <i class="fa-solid fa-play"></i>
-                        </span>
+                        <p>Fusce condimentum mattis placerat odio donec lacus porta torquent.</p>
                     </div>
 
                 </div>
+
+
             </div>
-            <!-- RIGHT SIDE -->
+
+
+            <!-- RIGHT -->
             <div class="about-right">
-                <div class="about-images">
+
+                <div class="about-images1">
+
                     <img class="image-main"
-                        src="https://plus.unsplash.com/premium_photo-1723802424179-ef25e1d90ad7?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                    <img class="image-overlay"
-                        src="https://images.unsplash.com/photo-1607544836657-08d9c1d97afe?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                        src="https://plus.unsplash.com/premium_photo-1723579204951-27e3b459e592?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+                    <img class="image-overlay1"
+                        src="https://images.unsplash.com/photo-1607544836657-08d9c1d97afe?q=80&w=880&auto=format&fit=crop">
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
-    <section class="container-fluid bg-white py-5">
+    <section class="container-fluid tm-section bg-light py-lg-5 py-3">
         <div class="testimonial-section">
 
             <!-- Background Text -->
@@ -501,7 +554,7 @@
 
                 <div class="nav-controls">
                     <button class="nav-btn" id="prevBtn">&#8592;</button>
-                    <div class="counter" id="counter">01 / 03</div>
+                    <div class="counter-num" id="counter">01 / 03</div>
                     <button class="nav-btn" id="nextBtn">&#8594;</button>
                 </div>
             </div>
@@ -526,8 +579,34 @@
 
         </div>
     </section>
+
+
+
+
+
+    <section class="appointment-section  bg-white py-5">
+        <div class="container">
+            <div class="form-box fw-semibold">MAKE AN APPOINTMENT</span>
+                <h2>Request a free quote</h2>
+
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Number">
+                </div>
+
+                <input type="email" placeholder="Your Email">
+                <textarea id="message" name="message" placeholder="Type Your Message" rows="6" cols="50"></textarea>
+
+                <button class="submit-btn">Submit Message</button>
+            </div>
+            <div class="image-box">
+                <img src="./images/colleagues-video-conferencing_23-2148738275.jpg">
+            </div>
+
+        </div>
+    </section>
     <section class="clients py-5 bg-light">
-        <div class="container d-flex  align-items-center  gap-3justify-content-start">
+        <div class="container d-flex  align-items-center  gap-5 justify-content-center">
             <span class="client-title fw-bold">OUR TRUSTED CLIENTS</span>
             <div class="client-logos d-flex justify-content-center align-items-center gap- 5 flex-wrap">
                 <img src="./images/instagram.png" alt="Toy Jesh">
@@ -537,7 +616,7 @@
                 <img src="./images/microsoft.png" alt="Contex">
                 <img src="./images/tesla.png" alt="Toy Jesh">
                 <img src="./images/google.png">
-                
+
             </div>
         </div>
     </section>
@@ -548,7 +627,7 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-6">
-                    <p class="sub-text">Subscribe Newsletter</p>
+                    <p class="sub-text fw-bold">Subscribe Newsletter</p>
 
                     <h1 class="news-title">
                         Stay Updated with <br>
@@ -574,99 +653,99 @@
             <div class="row">
 
                 <!-- Logo Section -->
-                <div class="col-lg-4 col-md-6 col-12">
-                <div class="footer-logo-area">
+                <div class="col-lg-4  col-12">
+                    <div class="footer-logo-area">
 
-                    <img src="./images/headerlogo.png" alt="logo">
+                        <img src="./images/headerlogo.png" alt="logo">
 
-                    <p class="disc">
-                        We specialize in providing cutting-edge technology solutions that empower businesses
-                        to thrive in the digital age.
-                    </p>
+                        <p class="disc">
+                            We specialize in providing cutting-edge technology solutions that empower businesses
+                            to thrive in the digital age.
+                        </p>
 
-                    <ul class="social-icons">
+                        <ul class="social-icons">
 
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
 
-                    </ul>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-12 col-12">
+                    <h5 class="footer-title">Quick Links</h5>
+
+                    <div class="quick-links">
+
+                        <ul>
+                            <li><a href="index.html"><i class="fa fa-arrow-right"></i> Home</a></li>
+                            <li><a href="About-page.html"><i class="fa fa-arrow-right"></i> About</a></li>
+                            <li><a href="services.html"><i class="fa fa-arrow-right"></i> Services</a></li>
+                            <li><a href="contact-page.html"><i class="fa fa-arrow-right"></i> Contact</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="index.html#blog"><i class="fa fa-arrow-right"></i> Blog</a></li>
+                            <li><a href="#"><i class="fa fa-arrow-right"></i> FAQ</a></li>
+                            <li><a href="#"><i class="fa fa-arrow-right"></i> Contact</a></li>
+                        </ul>
+
+                    </div>
 
                 </div>
+
+
+                <!-- Contact -->
+                <div class="col-lg-4 col-md-12 col-12 f-contact mx-md-auto">
+                    <h5 class="footer-title">Contact Us</h5>
+
+                    <div class="footer-contact">
+
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+
+                            <div class="text">
+                                <h6>Call Us</h6>
+                                <p>+91 9876543210</p>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+
+                            <div class="text">
+                                <h6>Email</h6>
+                                <p>info@gmail.com</p>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+
+                            <div class="text">
+                                <h6>Address</h6>
+                                <p>Hyderabad, India</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-
-
-            <!-- Quick Links -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <h5 class="footer-title">Quick Links</h5>
-
-                <div class="quick-links">
-
-                    <ul>
-                        <li><a href="index.html"><i class="fa fa-arrow-right"></i> Home</a></li>
-                        <li><a href="About-page.html"><i class="fa fa-arrow-right"></i> About</a></li>
-                        <li><a href="services.html"><i class="fa fa-arrow-right"></i> Services</a></li>
-                        <li><a href="contact-page.html"><i class="fa fa-arrow-right"></i> Contact</a></li>
-                    </ul>
-
-                    <ul>
-                        <li><a href="index.html#blog"><i class="fa fa-arrow-right"></i> Blog</a></li>
-                        <li><a href="#"><i class="fa fa-arrow-right"></i> FAQ</a></li>
-                        <li><a href="#"><i class="fa fa-arrow-right"></i> Contact</a></li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-            <!-- Contact -->
-            <div class="col-lg-4 col-md-6 col-12 f-contact mx-md-auto">
-            <h5 class="footer-title">Contact Us</h5>
-
-            <div class="footer-contact">
-
-                <div class="contact-item">
-                    <div class="icon">
-                        <i class="fa fa-phone"></i>
-                    </div>
-
-                    <div class="text">
-                        <h6>Call Us</h6>
-                        <p>+91 9876543210</p>
-                    </div>
-                </div>
-
-
-                <div class="contact-item">
-                    <div class="icon">
-                        <i class="fa fa-envelope"></i>
-                    </div>
-
-                    <div class="text">
-                        <h6>Email</h6>
-                        <p>info@gmail.com</p>
-                    </div>
-                </div>
-
-
-                <div class="contact-item">
-                    <div class="icon">
-                        <i class="fa fa-map-marker-alt"></i>
-                    </div>
-
-                    <div class="text">
-                        <h6>Address</h6>
-                        <p>Hyderabad, India</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        </div>
 
         </div>
 
@@ -696,6 +775,28 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        // ===== SIDEBAR TOGGLE =====
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sidebarPanel = document.getElementById('sidebarPanel');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const sidebarClose = document.getElementById('sidebarClose');
+
+        menuToggle.addEventListener('click', () => {
+            sidebarPanel.classList.add('open');
+            sidebarOverlay.classList.add('open');
+        });
+
+        sidebarClose.addEventListener('click', () => {
+            sidebarPanel.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        });
+
+        sidebarOverlay.addEventListener('click', () => {
+            sidebarPanel.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        });
+    </script>
 
 </body>
 
