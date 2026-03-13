@@ -17,7 +17,7 @@
 
 <body>
 
-    <div class="top-bar bg-dark text-white py-2">
+    <div class="top-bar bg-dark text-white py-2 d-none d-md-flex">
         <div class="container">
 
             <div class="row align-items-center text-center text-lg-start">
@@ -72,65 +72,106 @@
 
         </div>
     </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
+    <!-- SIDEBAR PANEL -->
+    <div class="sidebar-panel" id="sidebarPanel">
 
-      <a class="navbar-brand" href="#">
-        <img src="./images/headerlogo.png" alt="Logo" height="70">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-       <li class="nav-item">
-            <a class="nav-link" href="About-page.html">About Us</a>
-          </li>
+        <button class="sidebar-close" id="sidebarClose">✕</button>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown">
-              Services
-            </a>
-            <ul class="dropdown-menu shadow">
-              <li><a class="dropdown-item" href="services.html">services</a></li>
-              <li><a class="dropdown-item" href="servicedetailspage.html">service Details</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#projects">projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact-page.html">Contact</a>
-          </li>
-        </ul>
-        <div class="d-flex align-items-center header-actions ">
-
-          <!-- Search -->
-          <div class="search-wrapper me-3">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-
-          <!-- Get Quote Button -->
-          <a href="#" class="btn  btn-dark quote-btn me-3">
-            Get Quote
-          </a>
-
-          <!-- Menu Icon -->
-          <div class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-
+        <!-- Logo -->
+        <div class="sidebar-logo mb-4">
+            <img src="./images/headerlogo.png" alt="Logo" height="60">
         </div>
-      </div>
+
+        <!-- Description -->
+        <p class="sidebar-desc">
+            We must explain to you how all seds this mistakens idea denouncing pleasures and praising account. All seds
+            this
+            mistakens idea denouncing pleasures.
+        </p>
+
+        <!-- Get In Touch -->
+        <h5 class="sidebar-contact-title">Get In Touch</h5>
+
+        <ul class="sidebar-contact-list">
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 9177130808</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@sunseaz.com</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-globe"></i>
+                <span>www.sunseaz.com</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Madhapur, Hyderabad</span>
+            </li>
+        </ul>
+
     </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2 py-lg-5">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="./images/headerlogo.png" alt="Logo" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-page.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="services.html">services</a></li>
+                            <li><a class="dropdown-item" href="servicedetailspage.html">service Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-page.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center header-actions ">
+
+                    <!-- Search -->
+                    <div class="search-wrapper me-3 d-none d-lg-flex">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <!-- Get Quote Button -->
+                    <a href="#" class="btn  btn-dark quote-btn me-3 d-none d-lg-flex">
+                        Get Quote
+                    </a>
+
+                    <!-- Menu Icon -->
+                    <div class="menu-toggle d-none d-lg-flex">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- HERO SECTION -->
 
     <section class="service-hero">
@@ -143,7 +184,7 @@
 
             <p>
                 Intrinsically coordinate multifunctional functionalities reliable potentialities.
-                Objectively envisioner high convergence through collaborative networks.
+
             </p>
 
         </div>
@@ -169,15 +210,20 @@
                     <h3 class="fw-semibold">Business Growth Management</h3>
 
                     <p>
-                        Continually myocardinate holistic mindshare with client-based web services.
-                        Assertively enable catalysts for change before tested markets.
+                        Business Growth Management is the process of planning and implementing strategies to increase a
+                        company’s revenue, customers, and market presence over time. It involves identifying
+                        opportunities for expansion, improving products or services, and using effective marketing
+                    </p>
+                    <p>
+                        Effective business growth management also requires proper financial planning, market research,
+                        and performance monitoring to ensure sustainable and long-term success for the organization
                     </p>
 
 
                     <div class="feature">
 
                         <div class="icon">
-                            <!-- <img src="./images/diagram.png"> -->
+                            <img src="./images/growth.png">
                         </div>
 
                         <div>
@@ -191,7 +237,7 @@
                     <div class="feature">
 
                         <div class="icon">
-                            <!-- <img src="./images/24-7.png"> -->
+                            <img src="./images/24-7.png">
                         </div>
 
                         <div>
@@ -205,7 +251,7 @@
                     <div class="feature">
 
                         <div class="icon">
-                            <!-- <img src="./images/customer-service.png"> -->
+                            <img src="./images/customer-service.png">
                         </div>
 
                         <div>
@@ -214,38 +260,72 @@
                         </div>
 
                     </div>
+                    <div class="feature">
+
+                        <div class="icon">
+                            <img src="./images/service.png">
+                        </div>
+
+                        <div>
+                            <h6 class="fw-semibold">quality Cost Service</h6>
+                            <p>Maintain wireless scenarios after sure quality vectors future.</p>
+                        </div>
+
+                    </div>
+                    <p>Effective business growth management also requires proper financial planning, market research,
+                        and performance monitoring to ensure sustainable and long-term success for the organization</p>
+
 
 
                     <h3 class="py-4">2 Simple Steps to Process</h3>
+                    <p>Starting a business requires careful planning and a clear understanding of the market. The first
+                        step is to identify a strong business idea that solves a problem or fulfills a need for
+                        customers. After choosing the idea, it is important to conduct market research to understand the
+                        target audience, competitors, and demand for the product or service.</p>
 
                     <div class="process">
 
+                        <hr class="line">
+
                         <div class="process-item">
 
-                            <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d">
+                            <img src="./images/black-white-portrait-digital-nomads_23-2151253980.jpg">
 
-                            <div>
+                            <div class="process-content">
                                 <h6>Define Your Objectives and Plan</h6>
                                 <p>Choose domain name, identify purpose and understand audience.</p>
                             </div>
 
+                            <div class="process-features">
+                                <p>Outline Key Features</p>
+                                <p>Choose a Domain Name</p>
+                                <p>Identify Purpose</p>
+                                <p>Understand Your Audience</p>
+                            </div>
+
                         </div>
+                        <hr class="line">
 
 
                         <div class="process-item">
 
                             <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
 
-                            <div>
+                            <div class="process-content">
                                 <h6>Build and Design Your Website</h6>
                                 <p>Choose domain name, identify purpose and understand audience.</p>
+                            </div>
+
+                            <div class="process-features">
+                                <p>Outline Key Features</p>
+                                <p>Choose a Domain Name</p>
+                                <p>Identify Purpose</p>
+                                <p>Understand Your Audience</p>
                             </div>
 
                         </div>
 
                     </div>
-
-
 
                     <!-- FAQ -->
 
@@ -342,7 +422,7 @@
 
     <!-- CLIENTS SECTION -->
 
-     <section class="clients py-5 bg-light">
+    <section class="clients py-5 bg-light">
         <div class="container d-flex  align-items-center  gap-5 justify-content-center">
             <span class="client-title fw-bold">OUR TRUSTED CLIENTS</span>
             <div class="client-logos d-flex justify-content-center align-items-center gap- 5 flex-wrap">
@@ -357,7 +437,6 @@
             </div>
         </div>
     </section>
-
 
 
     <!-- NEWSLETTER -->
